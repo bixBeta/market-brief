@@ -158,6 +158,12 @@
   .driver-list li:first-child { border-top: none; }
   .driver-list b { font-weight: 500; }
 
+  .empty { padding: 0 16px 16px; color: var(--muted); font-size: 14px; }
+  .criteria { border-top: 1px solid var(--line); padding: 12px 16px 14px; font-size: 13px; color: var(--muted); }
+  .criteria summary { cursor: pointer; color: var(--text); }
+  .criteria ul { margin: 8px 0 0; padding-left: 18px; }
+  .criteria p { margin: 8px 0 0; }
+
   /* ---------- Footer ---------- */
   footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 13px; }
   footer ul { margin: 6px 0 16px; padding-left: 18px; }
@@ -243,6 +249,32 @@ function moverTable(rows, opts = {}) {
     </tr>`).join("")}</tbody></table></div>`;
 }
 
+
+function watchlistPanel(w) {
+  if (!w) return `<div class="block"><h3>Gap watchlist</h3><p class="sub">Not available for this date. The watchlist started on Oct 6, 2026.</p></div>`;
+  const rows = w.items || [];
+  const crit = (w.criteria || []).map(c => `<li>${esc(c)}</li>`).join("");
+  const scale = Math.max(1, ...rows.map(r => Math.abs(r.gap_pct ?? 0)));
+  const body = rows.length ? `<div class="scroll"><table>
+    <thead><tr><th>Ticker</th><th>Direction</th><th class="num">Prior close</th><th class="num">Pre-market</th><th class="num">Gap</th><th class="num">Rel vol</th><th>Catalyst</th><th>Risk note</th></tr></thead>
+    <tbody>${rows.map(r => `<tr>
+      <td><span class="tk">${esc(r.ticker)}</span><span class="co">${esc(r.company)}</span></td>
+      <td>${r.direction === "down" ? "Gap down" : "Gap up"}</td>
+      <td class="num">${fmtPrice(r.prior_close)}</td>
+      <td class="num">${fmtPrice(r.premarket_price)}</td>
+      <td class="num">${pctCell(r.gap_pct, scale)}</td>
+      <td class="num">${relv(r.relvol)}</td>
+      <td class="cat">${esc(r.catalyst)}</td>
+      <td class="cat">${r.risk ? '<span class="flag">⚠ </span>' + esc(r.risk) : '<span class="na">None noted</span>'}</td>
+    </tr>`).join("")}</tbody></table></div>`
+    : `<p class="prose empty">${esc(w.empty_reason || "No names passed the screen today.")}</p>`;
+  return `<div class="block"><h3>Gap watchlist</h3>
+    <p class="sub">A rules-based screen of names gapping on news before the open. It is not a recommendation to buy or sell.</p>
+    ${body}
+    <details class="criteria"><summary>Screen rules</summary><ul>${crit}</ul>${w.excluded ? `<p>Screened out today: ${esc(w.excluded)}</p>` : ""}</details>
+  </div>`;
+}
+
 function render(d) {
   $("#session").textContent = d.session === "PRE-MARKET" ? "Pre-market" : "Regular session";
   const dateStr = new Date(d.date + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
@@ -270,7 +302,7 @@ function render(d) {
 
   <section class="tabs-section">
     <div role="tablist" aria-label="Brief sections">
-      ${["Movers", "Most active", "Under $5", "Leveraged ETFs", "Unusual volume", "Earnings"].map((t, i) =>
+      ${["Movers", "Gap watchlist", "Most active", "Under $5", "Leveraged ETFs", "Unusual volume", "Earnings"].map((t, i) =>
         `<button role="tab" id="tab-${i}" aria-controls="panel-${i}" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}">${t}</button>`).join("")}
     </div>
 
@@ -282,6 +314,10 @@ function render(d) {
     </div>
 
     <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" hidden>
+      ${watchlistPanel(d.watchlist)}
+    </div>
+
+    <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
       <div class="panel-grid">
         <div class="block"><h3>By share volume</h3>
           <div class="scroll"><table><thead><tr><th>Ticker</th><th class="num">Price</th><th class="num">Change</th><th class="num">Volume</th><th class="num">Rel vol</th></tr></thead>
@@ -294,14 +330,14 @@ function render(d) {
       </div>
     </div>
 
-    <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+    <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
       <div class="stack">
         <div class="block"><h3>Gainers under $5</h3><p class="sub">⚠ marks pump-and-dump risk signals</p>${moverTable(d.penny_gainers, { mcap: true })}</div>
         <div class="block"><h3>Losers under $5</h3><p class="sub">⚠ marks pump-and-dump risk signals</p>${moverTable(d.penny_losers, { mcap: true })}</div>
       </div>
     </div>
 
-    <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+    <div role="tabpanel" id="panel-4" aria-labelledby="tab-4" hidden>
       <div class="block"><h3>Leveraged ETF watchlist</h3><p class="sub">${esc(d.leveraged_note || "")}</p>
         <div class="scroll"><table><thead><tr><th>Ticker</th><th>Leverage</th><th class="num">Price</th><th class="num">Change</th><th class="num">Volume</th><th class="num">vs 30-day avg</th><th class="num">Underlying</th></tr></thead>
         <tbody>${lev.map(r => `<tr><td><span class="tk">${esc(r.ticker)}</span><span class="co">${esc(r.underlying)}</span></td><td>${esc(r.leverage)}</td><td class="num">${fmtPrice(r.price)}</td><td class="num">${pctCell(r.pct, levScale)}</td><td class="num">${esc(r.volume)}</td><td class="num na">${esc(r.vol_vs_avg)}</td><td class="num">${fmtPct(r.underlying_pct)}</td></tr>`).join("")}</tbody></table></div>
@@ -311,14 +347,14 @@ function render(d) {
       </div>
     </div>
 
-    <div role="tabpanel" id="panel-4" aria-labelledby="tab-4" hidden>
+    <div role="tabpanel" id="panel-5" aria-labelledby="tab-5" hidden>
       <div class="block"><h3>Relative volume of 3× or more</h3><p class="sub">Unusual options activity: ${esc(d.unusual_options || "n/a")}</p>
         <div class="scroll"><table><thead><tr><th>Ticker</th><th class="num">Rel vol</th><th class="num">Change</th><th>Reason</th></tr></thead>
         <tbody>${(d.unusual || []).map(r => `<tr><td class="tk">${esc(r.ticker)}</td><td class="num">${relv(r.relvol)}</td><td class="num">${fmtPct(r.pct)}</td><td class="cat">${esc(r.reason)}</td></tr>`).join("")}</tbody></table></div>
       </div>
     </div>
 
-    <div role="tabpanel" id="panel-5" aria-labelledby="tab-5" hidden>
+    <div role="tabpanel" id="panel-6" aria-labelledby="tab-6" hidden>
       <div class="block"><h3>Reporting today</h3>
         <div class="scroll"><table><thead><tr><th>Company</th><th>When</th><th class="num">EPS estimate</th><th>Pre-market reaction</th></tr></thead>
         <tbody>${earnRows(e.before_open, "Before open")}${earnRows(e.after_close, "After close")}</tbody></table></div>
