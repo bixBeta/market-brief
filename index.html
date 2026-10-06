@@ -453,10 +453,10 @@ function watchlistPanel(w) {
   const crit = (w.criteria || []).map(c => `<li>${esc(c)}</li>`).join("");
   const scale = Math.max(1, ...rows.map(r => Math.abs(r.gap_pct ?? 0)));
   const body = rows.length ? `<div class="scroll"><table>
-    <thead><tr><th>Ticker</th><th>Direction</th><th class="num">Prior close</th><th class="num">Pre-market</th><th class="num">Gap</th><th class="num">Rel vol</th><th>Catalyst</th><th>Risk note</th></tr></thead>
+    <thead><tr><th>Ticker</th><th>Direction</th><th class="num">Prior close</th><th class="num">${esc(w.price_label || "Pre-market")}</th><th class="num">${esc(w.move_label || "Gap")}</th><th class="num">Rel vol</th><th>Catalyst</th><th>Risk note</th></tr></thead>
     <tbody>${rows.map(r => `<tr>
       <td>${tkBtn(r.ticker, r.company || r.underlying)}<span class="co">${esc(r.company)}</span></td>
-      <td>${r.direction === "down" ? "Gap down" : "Gap up"}</td>
+      <td>${r.direction === "down" ? (w.move_label ? "Down" : "Gap down") : (w.move_label ? "Up" : "Gap up")}</td>
       <td class="num">${fmtPrice(r.prior_close)}</td>
       <td class="num">${fmtPrice(r.premarket_price)}</td>
       <td class="num">${pctCell(r.gap_pct, scale)}</td>
@@ -466,7 +466,7 @@ function watchlistPanel(w) {
     </tr>`).join("")}</tbody></table></div>`
     : `<p class="prose empty">${esc(w.empty_reason || "No names passed the screen today.")}</p>`;
   return `<div class="block"><h3>Gap watchlist</h3>
-    <p class="sub">A rules-based screen of names gapping on news before the open. It is not a recommendation to buy or sell.</p>
+    <p class="sub">${esc(w.subtitle || "A rules-based screen of names gapping on news before the open.")} It is not a recommendation to buy or sell.</p>
     ${body}
     <details class="criteria"><summary>Screen rules</summary><ul>${crit}</ul>${w.excluded ? `<p>Screened out today: ${esc(w.excluded)}</p>` : ""}</details>
   </div>`;
