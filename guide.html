@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading the Brief</title>
+<meta name="description" content="A beginner's guide to reading the daily market brief: snapshot, movers, gap watchlist, under-$5 flags, leveraged ETFs, earnings and the calendar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0D1220; --panel: #141B2D; --line: #24304A; --text: #E7EBF3; --muted: #8C96AD;
+    --up: #4FD1B5; --down: #FF7D8E; --accent: #A59BFF; --warn: #F5C66B; --radius-lg: 14px;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #F2F4F9; --panel: #FFFFFF; --line: #D9DEEA; --text: #121829;
+      --muted: #5B647A; --up: #0B8A6F; --down: #C93A52; --accent: #5B4CD6; --warn: #9A6A00;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #F2F4F9; --panel: #FFFFFF; --line: #D9DEEA; --text: #121829;
+    --muted: #5B647A; --up: #0B8A6F; --down: #C93A52; --accent: #5B4CD6; --warn: #9A6A00;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--text); font-family: "Geist", system-ui, sans-serif; font-size: 16px; line-height: 1.6; }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+  header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .mark { font-weight: 600; letter-spacing: -0.01em; font-size: 16px; text-decoration: none; color: var(--text); white-space: nowrap; }
+  .mark span { color: var(--muted); font-weight: 400; }
+  nav.links { display: flex; gap: 4px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
+  nav.links a { font-size: 14px; color: var(--muted); text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid transparent; }
+  nav.links a[aria-current="page"] { color: var(--text); border-color: var(--accent); }
+  nav.links a:hover { color: var(--text); }
+  select { background: var(--panel); color: var(--text); border: 1px solid var(--line); border-radius: 6px; padding: 6px 8px; font: inherit; font-size: 13px; }
+
+  .layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 56px; padding: 40px 0 64px; }
+  .toc { position: sticky; top: 24px; align-self: start; font-size: 14px; }
+  .toc p { color: var(--muted); margin: 0 0 10px; }
+  .toc ol { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--line); }
+  .toc a { display: block; padding: 5px 0 5px 14px; color: var(--muted); text-decoration: none; margin-left: -1px; border-left: 1px solid transparent; }
+  .toc a:hover, .toc a.on { color: var(--text); border-left-color: var(--accent); }
+
+  article { max-width: 70ch; }
+  h1 { font-weight: 300; font-size: clamp(30px, 4.6vw, 46px); line-height: 1.1; letter-spacing: -0.025em; margin: 0 0 16px; }
+  .lead { font-size: 18px; color: var(--text); margin: 0 0 8px; }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 8px; }
+  section { padding-top: 40px; scroll-margin-top: 16px; }
+  h2 { font-size: 22px; font-weight: 500; letter-spacing: -0.015em; margin: 0 0 12px; }
+  p { margin: 0 0 14px; }
+  ul, ol.steps { margin: 0 0 16px; padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--muted); }
+  strong { font-weight: 500; }
+
+  .tablebox { background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius-lg); overflow-x: auto; margin: 4px 0 16px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.5; }
+  th { text-align: left; font-weight: 400; color: var(--muted); padding: 10px 14px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+  td { padding: 10px 14px; border-top: 1px solid var(--line); vertical-align: top; }
+  tr:first-child td { border-top: none; }
+  td:first-child { font-weight: 500; white-space: nowrap; }
+  th.num { text-align: right; }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 400; }
+  .neg { color: var(--down); }
+
+  .tag { font-size: 12px; line-height: 1; padding: 4px 8px; border-radius: 999px; border: 1px solid var(--line); display: inline-flex; align-items: center; gap: 6px; white-space: nowrap; vertical-align: 1px; }
+  .tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+  .t-calm { color: var(--muted); }
+  .t-watch { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 45%, transparent); }
+  .t-alert { color: var(--down); border-color: color-mix(in srgb, var(--down) 50%, transparent); }
+
+  .note { border-left: 2px solid var(--accent); padding: 2px 0 2px 16px; color: var(--muted); margin: 0 0 16px; }
+  footer { border-top: 1px solid var(--line); padding: 24px 0 48px; color: var(--muted); font-size: 13px; }
+
+  @media (max-width: 860px) {
+    .layout { grid-template-columns: minmax(0, 1fr); gap: 24px; padding-top: 28px; }
+    .layout > * { min-width: 0; }
+    .mark span { display: none; }
+    .toc { position: static; }
+    .toc ol { display: flex; flex-wrap: wrap; gap: 6px; border-left: none; }
+    .toc a { border: 1px solid var(--line); border-radius: 999px; padding: 4px 10px; margin: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="mark" href="./">Market Brief <span>daily pre-open read</span></a>
+    <nav class="links" aria-label="Site">
+      <a href="./">Today's brief</a>
+      <a href="guide.html" aria-current="page">How to read it</a>
+      <select id="theme" aria-label="Theme">
+        <option value="">Auto theme</option><option value="dark">Dark</option><option value="light">Light</option>
+      </select>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside class="toc" aria-label="On this page">
+      <p>On this page</p>
+      <ol>
+        <li><a href="#routine">Morning routine</a></li>
+        <li><a href="#snapshot">Market snapshot</a></li>
+        <li><a href="#movers">Movers and gaps</a></li>
+        <li><a href="#penny">Under $5</a></li>
+        <li><a href="#leveraged">Leveraged ETFs</a></li>
+        <li><a href="#calendar">Earnings and calendar</a></li>
+        <li><a href="#rules">Ground rules</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+      </ol>
+    </aside>
+
+    <article>
+      <h1>How to read your market brief</h1>
+      <p class="lead">The brief tells you what the market is likely to care about today; it does not tell you what to buy. Use it to decide what to watch, what to avoid, and how much risk the day is likely to carry.</p>
+      <p class="meta">All times are Central. General education, not personal investment advice.</p>
+
+      <section id="routine">
+        <h2>A 10-minute morning routine</h2>
+        <p>Read the brief top to bottom, broad to narrow: first decide what kind of day it is, then what is moving, then whether any of it fits your rules.</p>
+        <ol class="steps">
+          <li><strong>Read the headline and "What's driving today."</strong> Ask one question: is today about the whole market (a Fed speaker, an inflation number, a bond selloff) or about individual companies (earnings, deals)?</li>
+          <li><strong>Scan the snapshot.</strong> Are futures up or down, and by how much? Is the VIX rising? Is the 10-year yield climbing? This sets the day's mood.</li>
+          <li><strong>Check the calendar.</strong> Note any release at 7:30 a.m. or 9:00 a.m. Prices often jump around those times.</li>
+          <li><strong>Look at the Gap watchlist and Movers.</strong> These are the stocks with news. Read the catalyst column before the % column.</li>
+          <li><strong>Check your own holdings.</strong> Is anything you own, or its underlying, in the movers, earnings or leveraged ETF tables?</li>
+          <li><strong>Decide what you will not do today.</strong> Most good decisions on a busy morning are things you skip.</li>
+        </ol>
+      </section>
+
+      <section id="snapshot">
+        <h2>The market snapshot</h2>
+        <p>The snapshot is a mood reading for the whole market; a single stock rarely fights it for long, so check it before any individual name. Bars right of the purple line are up, bars to the left are down.</p>
+        <p>Each row carries a tag that rates today's reading for that market. Hover or tap a tag to see what the metric measures and why it got its rating.</p>
+        <p><span class="tag t-calm">Normal</span> ordinary for this market &nbsp; <span class="tag t-watch">Notable</span> bigger than usual, worth checking why &nbsp; <span class="tag t-alert">Large move</span> unusual for one session</p>
+        <div class="tablebox"><table>
+          <thead><tr><th>Line</th><th>What it measures</th><th>How to read it</th></tr></thead>
+          <tbody>
+            <tr><td>Index futures</td><td>Where the S&amp;P 500, Nasdaq-100, Dow and Russell 2000 are trading before the open</td><td>Under ±0.3% is a quiet open; over ±1% is a big day. Nasdaq-100 leads tech; Russell 2000 tracks small companies.</td></tr>
+            <tr><td>VIX</td><td>Expected S&amp;P 500 swings over the next 30 days</td><td>Rough rule: below 15 calm, 15–20 normal, 20–30 nervous, above 30 fearful. Divide by 16 for the S&amp;P's typical one-day move: VIX 16 ≈ 1%.</td></tr>
+            <tr><td>10Y yield</td><td>Interest rate on 10-year US government debt</td><td>Rising yields usually hurt fast-growing tech and small caps most. At 5%+ it is often the market's main pressure.</td></tr>
+            <tr><td>DXY</td><td>US dollar against other major currencies</td><td>A stronger dollar tends to weigh on gold, oil and big exporters.</td></tr>
+            <tr><td>WTI crude</td><td>US oil price</td><td>Up helps energy stocks; a sharp rise can stoke inflation worries.</td></tr>
+            <tr><td>Gold</td><td>Safe-haven metal</td><td>Rising while stocks fall often means investors are nervous.</td></tr>
+            <tr><td>Bitcoin</td><td>Largest cryptocurrency</td><td>Drives crypto-linked stocks and ETFs such as COIN, MSTR, CONL and MSTX.</td></tr>
+          </tbody>
+        </table></div>
+        <p>The cash close line under the chart is where the indexes actually finished yesterday; futures move overnight from there. The difference is the move the market is expected to open with.</p>
+      </section>
+
+      <section id="movers">
+        <h2>Movers and the Gap watchlist</h2>
+        <p>A big percentage move matters only if you know why it happened and whether real money is behind it. Read three columns together: <strong>catalyst</strong>, <strong>relative volume</strong>, <strong>% change</strong>.</p>
+        <ul>
+          <li><strong>Catalyst.</strong> A buyout at a fixed price (PTC, RXO on Oct 5) usually stalls near the deal price, so most of the move is already done. Earnings, guidance or trial data can keep moving for days. "No confirmed catalyst" means nobody knows why the stock moved, so treat that move with suspicion.</li>
+          <li><strong>Relative volume.</strong> Today's volume divided by the stock's normal volume. 1× is an ordinary day; 3× or more means many more traders than usual are involved. A big move on low relative volume can reverse easily.</li>
+          <li><strong>% change.</strong> A gap is the jump between yesterday's close and today's first price. Gaps on strong news with heavy volume can keep going. Gaps on weak or no news often partly reverse during the day ("gap fill" or "fade").</li>
+        </ul>
+        <p>The Gap watchlist applies these checks for you: only $5+ stocks worth $2B+, gapping 3% or more, with confirmed news. It is a list of names worth reading about, not a list to buy. A gap-down on a downgrade is on the list for the same reason as a gap-up on earnings: both are where the action is.</p>
+        <p>Two patterns to recognise: <strong>follow-the-leader</strong> (one country, sector or theme moving together, like the Brazilian stocks on Oct 5 after the election) and <strong>news then dilution</strong> (a biotech jumps on trial data, then sells new shares after the close, as Vaxcyte did). Check the risk note before reading anything into a big gain.</p>
+      </section>
+
+      <section id="penny">
+        <h2>Under-$5 names and the ⚠ flags</h2>
+        <p>Read this tab as a warning list, not a shopping list. Cheap, tiny companies are where most pump-and-dump schemes happen: a price is pushed up fast, often through social media hype, and insiders sell to the late buyers.</p>
+        <div class="tablebox"><table>
+          <thead><tr><th>Flag</th><th>What it means</th></tr></thead>
+          <tbody>
+            <tr><td>No catalyst found</td><td>The price moved and no news explains it.</td></tr>
+            <tr><td>&gt;100% spike</td><td>The stock doubled or more in a day, often on very few shares.</td></tr>
+            <tr><td>Very low float</td><td>Few shares trade freely, so small orders move the price a lot, both ways.</td></tr>
+            <tr><td>Reverse split</td><td>The company merged shares to lift a low price, usually to stay listed. A common sign of a struggling company.</td></tr>
+            <tr><td>Offering / dilution</td><td>The company is selling new shares, which lowers the value of existing ones. Often follows a spike.</td></tr>
+            <tr><td>OTC listing</td><td>Trades off the main exchanges, with lighter rules and disclosure.</td></tr>
+          </tbody>
+        </table></div>
+        <p>The pattern to recognise is the round trip: SDEV rose 104% on Oct 2 and fell 47% on Oct 5. Two big up days in a row with no news (QTEX, SCKT) often look like the first half of that pattern.</p>
+      </section>
+
+      <section id="leveraged">
+        <h2>Leveraged ETFs</h2>
+        <p>A leveraged ETF multiplies the underlying's move for <strong>one day only</strong>, then resets. Over one day TQQQ should move about 3× the Nasdaq-100. Over several days the result drifts from 3×, and in choppy markets it loses money even when the index ends flat.</p>
+        <p>Two days where the index rises 10% and then falls 10%, starting from $100:</p>
+        <div class="tablebox"><table>
+          <thead><tr><th>Holding</th><th class="num">After day 1</th><th class="num">After day 2</th><th class="num">Net</th></tr></thead>
+          <tbody>
+            <tr><td>Index (1×)</td><td class="num">$110</td><td class="num">$99</td><td class="num neg">−1%</td></tr>
+            <tr><td>3× bull (like TQQQ)</td><td class="num">$130</td><td class="num">$91</td><td class="num neg">−9%</td></tr>
+            <tr><td>3× bear (like SQQQ)</td><td class="num">$70</td><td class="num">$91</td><td class="num neg">−9%</td></tr>
+          </tbody>
+        </table></div>
+        <p>The index lost 1% while both the bull and the bear funds lost 9%. This is called volatility decay. It is why these funds are built for short holds and why holding them for weeks needs care.</p>
+        <ul>
+          <li><strong>Look at the underlying column first.</strong> TSLL is a bet on Tesla, SOXL on chip stocks, NVDL on Nvidia. The driver notes say what moved each one.</li>
+          <li><strong>Bull and bear pairs mirror each other</strong> (TQQQ/SQQQ, SOXL/SOXS, TSLL/TSLQ, SPXL/SPXU, TNA/TZA). If one is up, its pair is down by roughly the same multiple.</li>
+          <li><strong>Size accordingly.</strong> A 3× fund moves like three positions in the index. A 3% index drop is roughly a 9% drop in TQQQ.</li>
+          <li><strong>n/a rows</strong> mean the brief couldn't get a fresh price, so check your broker for the live quote.</li>
+        </ul>
+      </section>
+
+      <section id="calendar">
+        <h2>Earnings and the calendar</h2>
+        <p>Much of a day's volatility is scheduled, and the brief tells you when.</p>
+        <div class="tablebox"><table>
+          <thead><tr><th>Time (CT)</th><th>What happens</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td>3:00–8:30 a.m.</td><td>Pre-market trading</td><td>Thin volume; prices can swing and spreads are wide.</td></tr>
+            <tr><td>7:30 a.m.</td><td>Most big economic releases (jobs, inflation, trade)</td><td>Futures can jump in seconds.</td></tr>
+            <tr><td>8:30 a.m.</td><td>Market opens</td><td>The first 15–30 minutes are usually the most volatile of the day.</td></tr>
+            <tr><td>9:00 a.m.</td><td>Second wave of data (consumer sentiment, housing)</td><td>Another possible jolt.</td></tr>
+            <tr><td>1:00 p.m.</td><td>Fed decisions (on meeting days)</td><td>Can move the whole market sharply.</td></tr>
+            <tr><td>3:00 p.m.</td><td>Market closes; after-hours begins</td><td>After-close earnings land from here on.</td></tr>
+          </tbody>
+        </table></div>
+        <p>For earnings: <strong>before the open</strong> means the results are already out and the stock's pre-market move shows the first reaction. <strong>After the close</strong> means the reaction comes tonight, and you can't trade out at today's close price once the news hits. A Fed speaker or a fresh inflation number can override everything else in the brief, so check the calendar before acting on any single stock.</p>
+      </section>
+
+      <section id="rules">
+        <h2>Ground rules for turning the brief into a decision</h2>
+        <p class="note">These are widely used beginner guardrails, not personal advice. Check anything with real money at stake against your own situation.</p>
+        <ul>
+          <li><strong>Decide your maximum loss before you enter.</strong> Many traders cap the risk on any one trade at 1–2% of their account, and set the exit point before buying.</li>
+          <li><strong>Don't chase the open.</strong> Waiting 15–30 minutes after 8:30 a.m. lets the first wild swings settle and shows whether a gap is holding or fading.</li>
+          <li><strong>No catalyst, no trade.</strong> If you can't say in one sentence why a stock is moving, you can't judge whether the move will last.</li>
+          <li><strong>Respect the market's mood.</strong> Buying a strong stock is harder on a day the snapshot is red and the VIX is jumping.</li>
+          <li><strong>Use limit orders before the open and on thin stocks.</strong> A limit order sets your price; a market order takes whatever is available, which can be far off in pre-market.</li>
+          <li><strong>Be careful with leverage and options.</strong> Losses compound faster; know how a position behaves if you're wrong for three days.</li>
+          <li><strong>Keep a short journal.</strong> Write what you did, why, and what the brief said. Reviewing it after a few weeks teaches you more than any single day.</li>
+        </ul>
+      </section>
+
+      <section id="glossary">
+        <h2>Glossary</h2>
+        <div class="tablebox"><table>
+          <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr><td>Futures</td><td>Contracts that trade nearly around the clock and show where indexes are heading before the open.</td></tr>
+            <tr><td>Pre-market</td><td>Trading before the 8:30 a.m. CT open; thinner and jumpier than the regular session.</td></tr>
+            <tr><td>Gap</td><td>The difference between yesterday's close and today's opening price.</td></tr>
+            <tr><td>Gap fill / fade</td><td>A gap that partly or fully reverses during the day.</td></tr>
+            <tr><td>Catalyst</td><td>The news behind a move: earnings, a deal, an upgrade, trial data.</td></tr>
+            <tr><td>Relative volume</td><td>Today's volume divided by normal volume; 3× means three times the usual trading.</td></tr>
+            <tr><td>Dollar volume</td><td>Shares traded × price; shows where the most money is moving.</td></tr>
+            <tr><td>Market cap</td><td>Share price × shares outstanding; the company's total stock value.</td></tr>
+            <tr><td>Float</td><td>Shares available to trade freely; a small float moves more easily.</td></tr>
+            <tr><td>Upgrade / downgrade</td><td>An analyst raising or lowering their rating on a stock.</td></tr>
+            <tr><td>Guidance</td><td>A company's own forecast for coming quarters; often moves a stock more than the results.</td></tr>
+            <tr><td>BMO / AMC</td><td>Before market open / after market close: when a company reports earnings.</td></tr>
+            <tr><td>EPS estimate</td><td>What analysts expect a company to earn per share; results are judged against it.</td></tr>
+            <tr><td>Dilution / offering</td><td>A company selling new shares, which shrinks existing holders' slice.</td></tr>
+            <tr><td>Reverse split</td><td>Merging shares (say 10 into 1) to raise a low share price.</td></tr>
+            <tr><td>Leverage (2×, 3×)</td><td>A fund aiming to move two or three times the underlying's daily change.</td></tr>
+            <tr><td>Bull / bear fund</td><td>A bull fund rises when its underlying rises; a bear fund rises when it falls.</td></tr>
+            <tr><td>Basis point (bp)</td><td>One hundredth of a percent: a yield moving from 5.26% to 5.31% rose 5 bp.</td></tr>
+            <tr><td>Limit order</td><td>An order that only fills at your price or better.</td></tr>
+          </tbody>
+        </table></div>
+      </section>
+    </article>
+  </div>
+
+  <footer>A factual guide to reading the brief, not investment advice. <a href="./">Back to today's brief</a></footer>
+</div>
+
+<script>
+(function () {
+  const theme = document.getElementById("theme");
+  try { const t = localStorage.getItem("mb-theme"); if (t) { theme.value = t; document.documentElement.dataset.theme = t; } } catch (e) {}
+  theme.addEventListener("change", () => {
+    const v = theme.value;
+    if (v) document.documentElement.dataset.theme = v; else delete document.documentElement.dataset.theme;
+    try { localStorage.setItem("mb-theme", v); } catch (e) {}
+  });
+
+  // Highlight the section in view in the table of contents
+  const links = [...document.querySelectorAll(".toc a")];
+  const byId = Object.fromEntries(links.map(a => [a.hash.slice(1), a]));
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver(entries => {
+      const hit = entries.filter(e => e.isIntersecting).pop();
+      if (hit) { links.forEach(a => a.classList.remove("on")); byId[hit.target.id]?.classList.add("on"); }
+    }, { rootMargin: "-20% 0px -70% 0px" });
+    document.querySelectorAll("article section").forEach(s => io.observe(s));
+  }
+})();
+</script>
+</body>
+</html>

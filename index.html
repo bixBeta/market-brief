@@ -65,6 +65,8 @@
     font-size: 13px; padding: 4px 10px; border-radius: 999px;
     border: 1px solid var(--accent); color: var(--accent);
   }
+  .guide-link { font-size: 13px; color: var(--muted); text-decoration: none; padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); }
+  .guide-link:hover { color: var(--text); border-color: var(--accent); }
   select {
     background: var(--panel); color: var(--text); border: 1px solid var(--line);
     border-radius: var(--radius-sm); padding: 6px 8px; font: inherit; font-size: 13px;
@@ -216,6 +218,7 @@
   <header class="top">
     <div class="mark">Market Brief <span>daily pre-open read</span></div>
     <div class="controls">
+      <a class="guide-link" href="guide.html">How to read it</a>
       <span class="pill" id="session">Loading</span>
       <label for="datepick" class="sr" style="position:absolute;left:-9999px">Choose a date</label>
       <select id="datepick" aria-label="Choose a date"></select>
