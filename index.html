@@ -358,12 +358,19 @@ function tagHTML(r) {
 
 
 /* ---------- Charts (TradingView embed, loaded only when a symbol is clicked) ---------- */
+// Index/futures symbols can't be embedded (TradingView restricts them), so the
+// chart shows the closest ETF; "Open on TradingView" still goes to the real index.
 const SNAP_SYMBOLS = [
-  [/s&p/i, "SP:SPX", "S&P 500 index"], [/nasdaq/i, "NASDAQ:NDX", "Nasdaq-100 index"],
-  [/dow/i, "DJ:DJI", "Dow Jones Industrial Average"], [/russell/i, "TVC:RUT", "Russell 2000 index"],
-  [/vix/i, "TVC:VIX", "Cboe Volatility Index"], [/10y|yield/i, "TVC:US10Y", "US 10-year Treasury yield"],
-  [/dxy|dollar/i, "TVC:DXY", "US Dollar Index"], [/wti|crude/i, "TVC:USOIL", "WTI crude oil"],
-  [/gold/i, "TVC:GOLD", "Gold spot"], [/bitcoin|btc/i, "BITSTAMP:BTCUSD", "Bitcoin / US dollar"],
+  [/s&p/i, "SPY", "SP:SPX", "Chart shows SPY, the ETF that tracks the S&P 500"],
+  [/nasdaq/i, "QQQ", "NASDAQ:NDX", "Chart shows QQQ, the ETF that tracks the Nasdaq-100"],
+  [/dow/i, "DIA", "DJ:DJI", "Chart shows DIA, the ETF that tracks the Dow"],
+  [/russell/i, "IWM", "TVC:RUT", "Chart shows IWM, the ETF that tracks the Russell 2000"],
+  [/vix/i, "VIXY", "TVC:VIX", "Chart shows VIXY, an ETF of short-term VIX futures; it drifts lower over time, so open TradingView for the VIX itself"],
+  [/10y|yield/i, "IEF", "TVC:US10Y", "Chart shows IEF, a 7–10 year Treasury bond ETF; it falls when yields rise"],
+  [/dxy|dollar/i, "UUP", "TVC:DXY", "Chart shows UUP, an ETF that tracks the US dollar index"],
+  [/wti|crude/i, "USO", "TVC:USOIL", "Chart shows USO, an ETF that tracks WTI oil futures"],
+  [/gold/i, "GLD", "TVC:GOLD", "Chart shows GLD, the ETF backed by physical gold"],
+  [/bitcoin|btc/i, "BITSTAMP:BTCUSD", "BITSTAMP:BTCUSD", "Bitcoin / US dollar"],
 ];
 function tkBtn(ticker, sub) {
   if (!ticker) return "";
@@ -372,7 +379,7 @@ function tkBtn(ticker, sub) {
 function snapBtn(name) {
   const hit = SNAP_SYMBOLS.find(([re]) => re.test(name));
   if (!hit) return esc(name);
-  return `<button type="button" class="tkbtn plain" data-sym="${hit[1]}" data-label="${esc(name)}" data-sub="${esc(hit[2])}" aria-label="Show chart for ${esc(name)}">${esc(name)}</button>`;
+  return `<button type="button" class="tkbtn plain" data-sym="${hit[1]}" data-ext="${hit[2]}" data-label="${esc(name)}" data-sub="${esc(hit[3])}" aria-label="Show chart for ${esc(name)}">${esc(name)}</button>`;
 }
 function currentTheme() {
   const t = document.documentElement.dataset.theme;
@@ -384,7 +391,7 @@ function openChart(btn) {
   const sym = btn.dataset.sym;
   $("#chart-title").textContent = btn.dataset.label;
   $("#chart-sub").textContent = btn.dataset.sub || "";
-  $("#chart-ext").href = `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(sym)}`;
+  $("#chart-ext").href = `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(btn.dataset.ext || sym)}`;
   body.innerHTML = "";
   const wrap = document.createElement("div");
   wrap.className = "tradingview-widget-container";
