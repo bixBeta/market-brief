@@ -10,7 +10,8 @@
     "Relative volume = volume so far today / Yahoo 3-month average daily volume. It is only ~1h20m into the session, so these ratios understate the full day.",
     "WBD and PSKY were excluded from most-active: their quotes are frozen at Monday's close (PSKY now trades as SKYD on the NYSE).",
     "Under-$5 names were not individually news-checked; 'no catalyst identified' means none was found in the movers coverage reviewed.",
-    "Leveraged ETF volume vs 30-day average is n/a this early in the session. Underlying moves use index or ETF proxies: SOXX for the NYSE Semiconductor Index, XBI for S&P Biotech."
+    "Leveraged ETF volume vs 30-day average is n/a this early in the session. Underlying moves use index or ETF proxies: SOXX for the NYSE Semiconductor Index, XBI for S&P Biotech.",
+    "Published through the Mac publisher (setup test, 10:31 a.m. CT)."
   ],
   "snapshot": [
     {
