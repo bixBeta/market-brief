@@ -190,6 +190,42 @@
   .criteria ul { margin: 8px 0 0; padding-left: 18px; }
   .criteria p { margin: 8px 0 0; }
 
+  /* Ticker chart buttons + dialog */
+  .tkbtn {
+    font: inherit; font-weight: 600; letter-spacing: 0.01em; color: var(--text);
+    background: none; border: 0; padding: 0; cursor: pointer;
+    text-decoration: underline; text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px; text-underline-offset: 3px;
+  }
+  .tkbtn:hover { color: var(--accent); }
+  .tkbtn.plain { font-weight: 400; letter-spacing: 0; }
+  dialog.chart {
+    width: min(1040px, calc(100vw - 32px)); height: min(680px, calc(100vh - 48px));
+    padding: 0; border: 1px solid var(--line); border-radius: var(--radius-lg);
+    background: var(--panel); color: var(--text); overflow: hidden;
+  }
+  dialog.chart::backdrop { background: rgba(5, 8, 16, 0.6); backdrop-filter: blur(2px); }
+  dialog.chart[open] { display: flex; flex-direction: column; }
+  .chart-head { display: flex; align-items: baseline; gap: 12px; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+  .chart-head h2 { margin: 0; font-size: 16px; }
+  .chart-head .co { display: inline; }
+  .chart-head .spacer { flex: 1; }
+  .chart-head a { font-size: 13px; }
+  .chart-close {
+    font: inherit; font-size: 13px; color: var(--text); background: none; cursor: pointer;
+    border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px;
+  }
+  .chart-close:hover { border-color: var(--accent); }
+  .chart-body { flex: 1; min-height: 0; position: relative; }
+  .chart-body::before {
+    content: "Loading chart… If nothing appears, use Open on TradingView.";
+    position: absolute; inset: 0; display: grid; place-items: center; color: var(--muted); font-size: 14px; padding: 16px; text-align: center;
+  }
+  .chart-body .tradingview-widget-container { position: relative; z-index: 1; }
+  .chart-body .tradingview-widget-container, .chart-body .tradingview-widget-container__widget { height: 100%; width: 100%; }
+  .chart-note { font-size: 12px; color: var(--muted); padding: 8px 16px; border-top: 1px solid var(--line); }
+  @media (max-width: 600px) { dialog.chart { width: 100vw; height: 100dvh; max-width: none; max-height: none; border-radius: 0; } }
+
   /* ---------- Footer ---------- */
   footer { border-top: 1px solid var(--line); padding: 28px 0 48px; color: var(--muted); font-size: 13px; }
   footer ul { margin: 6px 0 16px; padding-left: 18px; }
@@ -229,6 +265,17 @@
   </header>
   <main id="app"></main>
 </div>
+
+<dialog class="chart" id="chart" aria-labelledby="chart-title">
+  <div class="chart-head">
+    <h2 id="chart-title"></h2><span class="co" id="chart-sub"></span>
+    <span class="spacer"></span>
+    <a id="chart-ext" href="#" target="_blank" rel="noopener">Open on TradingView</a>
+    <button type="button" class="chart-close" id="chart-close">Close</button>
+  </div>
+  <div class="chart-body" id="chart-body"></div>
+  <div class="chart-note">Charts by TradingView. Prices may be delayed; check your broker for live quotes.</div>
+</dialog>
 
 <script>
 const $ = (s, el = document) => el.querySelector(s);
@@ -309,6 +356,61 @@ function tagHTML(r) {
     <span role="tooltip" id="${id}" class="tip"><b>${esc(r.name)}</b>${esc(t.about)}<span class="why">${esc(t.why)}</span></span></div>`;
 }
 
+
+/* ---------- Charts (TradingView embed, loaded only when a symbol is clicked) ---------- */
+const SNAP_SYMBOLS = [
+  [/s&p/i, "SP:SPX", "S&P 500 index"], [/nasdaq/i, "NASDAQ:NDX", "Nasdaq-100 index"],
+  [/dow/i, "DJ:DJI", "Dow Jones Industrial Average"], [/russell/i, "TVC:RUT", "Russell 2000 index"],
+  [/vix/i, "TVC:VIX", "Cboe Volatility Index"], [/10y|yield/i, "TVC:US10Y", "US 10-year Treasury yield"],
+  [/dxy|dollar/i, "TVC:DXY", "US Dollar Index"], [/wti|crude/i, "TVC:USOIL", "WTI crude oil"],
+  [/gold/i, "TVC:GOLD", "Gold spot"], [/bitcoin|btc/i, "BITSTAMP:BTCUSD", "Bitcoin / US dollar"],
+];
+function tkBtn(ticker, sub) {
+  if (!ticker) return "";
+  return `<button type="button" class="tkbtn" data-sym="${esc(ticker)}" data-label="${esc(ticker)}" data-sub="${esc(sub || "")}" aria-label="Show chart for ${esc(ticker)}">${esc(ticker)}</button>`;
+}
+function snapBtn(name) {
+  const hit = SNAP_SYMBOLS.find(([re]) => re.test(name));
+  if (!hit) return esc(name);
+  return `<button type="button" class="tkbtn plain" data-sym="${hit[1]}" data-label="${esc(name)}" data-sub="${esc(hit[2])}" aria-label="Show chart for ${esc(name)}">${esc(name)}</button>`;
+}
+function currentTheme() {
+  const t = document.documentElement.dataset.theme;
+  if (t) return t;
+  return matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+}
+function openChart(btn) {
+  const dlg = $("#chart"), body = $("#chart-body");
+  const sym = btn.dataset.sym;
+  $("#chart-title").textContent = btn.dataset.label;
+  $("#chart-sub").textContent = btn.dataset.sub || "";
+  $("#chart-ext").href = `https://www.tradingview.com/chart/?symbol=${encodeURIComponent(sym)}`;
+  body.innerHTML = "";
+  const wrap = document.createElement("div");
+  wrap.className = "tradingview-widget-container";
+  const inner = document.createElement("div");
+  inner.className = "tradingview-widget-container__widget";
+  wrap.appendChild(inner);
+  const script = document.createElement("script");
+  script.src = "https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js";
+  script.async = true;
+  script.textContent = JSON.stringify({
+    autosize: true, symbol: sym, interval: "D", range: "3M", timezone: "America/Chicago",
+    theme: currentTheme(), style: "1", locale: "en", allow_symbol_change: true,
+    hide_side_toolbar: true, save_image: false, calendar: false, support_host: "https://www.tradingview.com",
+  });
+  wrap.appendChild(script);
+  body.appendChild(wrap);
+  dlg.showModal();
+}
+document.addEventListener("click", e => {
+  const b = e.target.closest(".tkbtn");
+  if (b) openChart(b);
+});
+$("#chart-close").addEventListener("click", () => $("#chart").close());
+$("#chart").addEventListener("click", e => { if (e.target === e.currentTarget) e.currentTarget.close(); });
+$("#chart").addEventListener("close", () => { $("#chart-body").innerHTML = ""; });
+
 function zeroField(rows) {
   const max = Math.max(0.5, ...rows.filter(r => r.pct !== null).map(r => Math.abs(r.pct)));
   return rows.map(r => {
@@ -319,7 +421,7 @@ function zeroField(rows) {
       bar = `<span class="bar ${r.pct >= 0 ? "up" : "down"}" style="width:${w}%"></span>`;
     }
     return `<div class="frow">
-      <div class="fname">${esc(r.name)}</div>
+      <div class="fname">${snapBtn(r.name)}</div>
       <div class="flevel">${esc(r.level)}</div>
       ${tagHTML(r)}
       <div class="track" aria-hidden="true">${bar}</div>
@@ -335,7 +437,7 @@ function moverTable(rows, opts = {}) {
     ${opts.mcap ? '<th class="num">Mkt cap</th><th class="num">Float</th>' : '<th class="num">Rel vol</th>'}
     <th>${opts.mcap ? "Catalyst / flag" : "Catalyst"}</th></tr></thead>
     <tbody>${rows.map(r => `<tr>
-      <td><span class="tk">${esc(r.ticker)}</span><span class="co">${esc(r.company)}</span></td>
+      <td>${tkBtn(r.ticker, r.company || r.underlying)}<span class="co">${esc(r.company)}</span></td>
       <td class="num">${fmtPrice(r.price)}</td>
       <td class="num">${pctCell(r.pct, scale)}</td>
       <td class="num">${esc(r.volume)}</td>
@@ -353,7 +455,7 @@ function watchlistPanel(w) {
   const body = rows.length ? `<div class="scroll"><table>
     <thead><tr><th>Ticker</th><th>Direction</th><th class="num">Prior close</th><th class="num">Pre-market</th><th class="num">Gap</th><th class="num">Rel vol</th><th>Catalyst</th><th>Risk note</th></tr></thead>
     <tbody>${rows.map(r => `<tr>
-      <td><span class="tk">${esc(r.ticker)}</span><span class="co">${esc(r.company)}</span></td>
+      <td>${tkBtn(r.ticker, r.company || r.underlying)}<span class="co">${esc(r.company)}</span></td>
       <td>${r.direction === "down" ? "Gap down" : "Gap up"}</td>
       <td class="num">${fmtPrice(r.prior_close)}</td>
       <td class="num">${fmtPrice(r.premarket_price)}</td>
@@ -374,7 +476,7 @@ function render(d) {
   $("#session").textContent = d.session === "PRE-MARKET" ? "Pre-market" : "Regular session";
   const dateStr = new Date(d.date + "T12:00:00").toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
   const e = d.earnings || { before_open: [], after_close: [] };
-  const earnRows = (list, when) => list.map(r => `<tr><td><span class="tk">${esc(r.ticker)}</span><span class="co">${esc(r.company)}</span></td>
+  const earnRows = (list, when) => list.map(r => `<tr><td>${tkBtn(r.ticker, r.company || r.underlying)}<span class="co">${esc(r.company)}</span></td>
     <td>${when}</td><td class="num">${esc(r.estimate)}</td><td>${esc(r.reaction)}${r.note ? `<span class="co">${esc(r.note)}</span>` : ""}</td></tr>`).join("");
   const lev = d.leveraged || [];
   const levScale = Math.max(1, ...lev.map(r => Math.abs(r.pct ?? 0)));
@@ -416,11 +518,11 @@ function render(d) {
       <div class="panel-grid">
         <div class="block"><h3>By share volume</h3>
           <div class="scroll"><table><thead><tr><th>Ticker</th><th class="num">Price</th><th class="num">Change</th><th class="num">Volume</th><th class="num">Rel vol</th></tr></thead>
-          <tbody>${(d.active_shares || []).map(r => `<tr><td class="tk">${esc(r.ticker)}</td><td class="num">${fmtPrice(r.price)}</td><td class="num">${pctCell(r.pct, 16)}</td><td class="num">${esc(r.volume)}</td><td class="num">${relv(r.relvol)}</td></tr>`).join("")}</tbody></table></div>
+          <tbody>${(d.active_shares || []).map(r => `<tr><td>${tkBtn(r.ticker)}</td><td class="num">${fmtPrice(r.price)}</td><td class="num">${pctCell(r.pct, 16)}</td><td class="num">${esc(r.volume)}</td><td class="num">${relv(r.relvol)}</td></tr>`).join("")}</tbody></table></div>
         </div>
         <div class="block"><h3>By dollar volume</h3><p class="sub">${esc(d.active_dollars_note || "")}</p>
           <div class="scroll"><table><thead><tr><th>Ticker</th><th class="num">Dollar volume</th></tr></thead>
-          <tbody>${(d.active_dollars || []).map(r => `<tr><td class="tk">${esc(r.ticker)}</td><td class="num">${esc(r.dollar_volume)}</td></tr>`).join("")}</tbody></table></div>
+          <tbody>${(d.active_dollars || []).map(r => `<tr><td>${tkBtn(r.ticker)}</td><td class="num">${esc(r.dollar_volume)}</td></tr>`).join("")}</tbody></table></div>
         </div>
       </div>
     </div>
@@ -435,7 +537,7 @@ function render(d) {
     <div role="tabpanel" id="panel-4" aria-labelledby="tab-4" hidden>
       <div class="block"><h3>Leveraged ETF watchlist</h3><p class="sub">${esc(d.leveraged_note || "")}</p>
         <div class="scroll"><table><thead><tr><th>Ticker</th><th>Leverage</th><th class="num">Price</th><th class="num">Change</th><th class="num">Volume</th><th class="num">vs 30-day avg</th><th class="num">Underlying</th></tr></thead>
-        <tbody>${lev.map(r => `<tr><td><span class="tk">${esc(r.ticker)}</span><span class="co">${esc(r.underlying)}</span></td><td>${esc(r.leverage)}</td><td class="num">${fmtPrice(r.price)}</td><td class="num">${pctCell(r.pct, levScale)}</td><td class="num">${esc(r.volume)}</td><td class="num na">${esc(r.vol_vs_avg)}</td><td class="num">${fmtPct(r.underlying_pct)}</td></tr>`).join("")}</tbody></table></div>
+        <tbody>${lev.map(r => `<tr><td>${tkBtn(r.ticker, r.company || r.underlying)}<span class="co">${esc(r.underlying)}</span></td><td>${esc(r.leverage)}</td><td class="num">${fmtPrice(r.price)}</td><td class="num">${pctCell(r.pct, levScale)}</td><td class="num">${esc(r.volume)}</td><td class="num na">${esc(r.vol_vs_avg)}</td><td class="num">${fmtPct(r.underlying_pct)}</td></tr>`).join("")}</tbody></table></div>
       </div>
       <div class="block" style="margin-top:20px"><h3>What's moving the underlyings</h3>
         <ul class="driver-list">${(d.leveraged_drivers || []).map(x => `<li><b>${esc(x.group)}</b> ${esc(x.text)}</li>`).join("")}</ul>
@@ -445,7 +547,7 @@ function render(d) {
     <div role="tabpanel" id="panel-5" aria-labelledby="tab-5" hidden>
       <div class="block"><h3>Relative volume of 3× or more</h3><p class="sub">Unusual options activity: ${esc(d.unusual_options || "n/a")}</p>
         <div class="scroll"><table><thead><tr><th>Ticker</th><th class="num">Rel vol</th><th class="num">Change</th><th>Reason</th></tr></thead>
-        <tbody>${(d.unusual || []).map(r => `<tr><td class="tk">${esc(r.ticker)}</td><td class="num">${relv(r.relvol)}</td><td class="num">${fmtPct(r.pct)}</td><td class="cat">${esc(r.reason)}</td></tr>`).join("")}</tbody></table></div>
+        <tbody>${(d.unusual || []).map(r => `<tr><td>${tkBtn(r.ticker)}</td><td class="num">${relv(r.relvol)}</td><td class="num">${fmtPct(r.pct)}</td><td class="cat">${esc(r.reason)}</td></tr>`).join("")}</tbody></table></div>
       </div>
     </div>
 
