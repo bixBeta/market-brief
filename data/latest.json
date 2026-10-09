@@ -16,7 +16,8 @@
     "WTI change differs by source: Yahoo CL=F −0.1% vs Thursday's settle; TheStreet/Yahoo blog cite −0.6% to −0.9% (~$90.7–90.9).",
     "No Fed speakers found on today's schedule in the sources checked. CNBC movers page blocked (Access Denied); Benzinga, TheStreet, TradingKey and the Yahoo live blog used instead.",
     "Under-$5 lists are StockAnalysis top-20 pre-market gainers/losers (~7:57 a.m. CT) filtered to ≥100K shares and <$5 (only 8 gainers qualified); market cap = Yahoo shares outstanding × pre-market price; float not available. VEEA (+53%, $5.94, ~$12M cap) fits neither table. ZBAO (−8%, 170M shares) announced a 1-for-50 reverse split.",
-    "Leveraged ETF volume is pre-market volume as a share of a 3-month average day (30-day average not available). NYSE FANG+ has no pre-market quote (underlying_pct null). Proxies: NQ for Nasdaq-100, ES for S&P 500, RTY for Russell 2000, SOXX for semis, XBI for biotech (thin)."
+    "Leveraged ETF volume is pre-market volume as a share of a 3-month average day (30-day average not available). NYSE FANG+ has no pre-market quote (underlying_pct null). Proxies: NQ for Nasdaq-100, ES for S&P 500, RTY for Russell 2000, SOXX for semis, XBI for biotech (thin).",
+    "Republished at ~4:40 p.m. CT: GitHub's Pages build for the 8:02 a.m. push failed and its re-run got stuck, so the same data was pushed again to start a fresh build."
   ],
   "snapshot": [
     {
