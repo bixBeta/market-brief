@@ -1,0 +1,1030 @@
+{
+ "date": "2026-10-14",
+ "weekday": "Wednesday",
+ "session": "PRE-MARKET",
+ "generated_at": "2026-10-14T07:54:09-05:00",
+ "data_as_of": "Futures, VIX, 10Y, DXY, oil, gold, BTC: Yahoo v7 quotes ~7:34–7:49 a.m. CT. Stock and ETF pre-market prices and volumes: StockAnalysis quote API ~7:50 a.m. CT, cross-checked against Yahoo's screener (~7:45 a.m. CT). Cash closes are Tuesday Oct 13.",
+ "headline": "A hotter-than-expected September CPI (3.7% vs 3.6%) has futures lower, with Russell 2000 futures down 1.1%, while Bank of America falls 7% on a $1.2B penalty-driven miss and Liquidia jumps 37% on a litigation settlement.",
+ "notes": [
+  "Scheduled run at ~7:49 a.m. CT, before the 8:30 a.m. CT open: PRE-MARKET. All movers use live pre-market data dated Oct 14 (StockAnalysis and Yahoo via the Mac browser). CPI was released at 7:30 a.m. CT, so futures and yields reflect it.",
+  "Gap % = pre-market price vs Tuesday's close (StockAnalysis). Quality movers were screened from Yahoo's US list of stocks ≥$5 and ≥$2B (top 3,000 by market cap; 1,136 had an Oct 14 pre-market quote) and confirmed on StockAnalysis. LQDA ($2.40B) was missing from Yahoo's top-3,000 pass and was added from StockAnalysis.",
+  "Excluded as data artifacts: SKYD (Yahoo −16%, StockAnalysis +64% on 3.7K shares; shares began trading without warrant entitlement, so prior-close bases differ), BMO and RY (Yahoo +4.5–4.9% vs StockAnalysis −0.4–0.7% on a few hundred shares), NICE (Yahoo −6% vs StockAnalysis −0.6% on 826 shares).",
+  "Names with <10K pre-market shares were left out of the movers tables as too thinly traded: ESLT (+6.2%, 4K), EAT (+2.8%, 3K), SHG (−4.3%), and several quotes with no pre-market volume (LYV, GPN, FERG, EXR). VIR (+9.4%, Gilead collaboration) is $1.8B market cap, below the $2B cutoff.",
+  "Relative volume = pre-market volume ÷ 3-month average full-day volume (Yahoo), so values are naturally small before the open.",
+  "Gap watchlist: LQDA's settlement is not a listed catalyst type by itself; it was kept because BTIG upgraded it to Buy the same morning. CRWV, NBIS, IONQ, WULF, CRDO and VAL were excluded for no company-specific catalyst of a listed type. DELL (−3.84%) is close to the threshold.",
+  "CNBC's CPI article could not be fetched (WebFetch error), so CPI figures come from Yahoo Finance's live blog. Core CPI month-over-month was not found.",
+  "Under-$5 lists are StockAnalysis's top-20 pre-market gainers and losers (~7:50 a.m. CT), filtered to ≥100K shares and <$5. Market cap is StockAnalysis's figure (based on the prior close). Float was not available, and reverse-split history was not checked. AEHL (+178%, $23.74, ~$12M cap) and GRML (+42%, $7.85, Greenland theme) fit neither table.",
+  "Mortgage applications and Beige Book times are their usual 7 a.m. and 2 p.m. ET schedule, not confirmed today."
+ ],
+ "snapshot": [
+  {
+   "name": "S&P 500 futures",
+   "level": "7,830.75",
+   "change": "−25.00",
+   "pct": -0.32
+  },
+  {
+   "name": "Nasdaq-100 futures",
+   "level": "30,603.25",
+   "change": "−188.25",
+   "pct": -0.61
+  },
+  {
+   "name": "Dow futures",
+   "level": "51,829",
+   "change": "−106",
+   "pct": -0.2
+  },
+  {
+   "name": "Russell 2000 futures",
+   "level": "2,769.50",
+   "change": "−30.60",
+   "pct": -1.09
+  },
+  {
+   "name": "VIX",
+   "level": "15.64",
+   "change": "+0.37",
+   "pct": 2.43
+  },
+  {
+   "name": "10Y yield",
+   "level": "5.27%",
+   "change": "+0.06 pt",
+   "pct": 1.09
+  },
+  {
+   "name": "DXY",
+   "level": "102.67",
+   "change": "+0.49",
+   "pct": 0.48
+  },
+  {
+   "name": "WTI crude",
+   "level": "95.63",
+   "change": "+1.49",
+   "pct": 1.58
+  },
+  {
+   "name": "Gold",
+   "level": "4,132.20",
+   "change": "−45.10",
+   "pct": -1.08
+  },
+  {
+   "name": "Bitcoin",
+   "level": "82,822",
+   "change": "−440",
+   "pct": -0.53
+  }
+ ],
+ "cash_close": [
+  {
+   "name": "S&P 500",
+   "level": "7,805.45",
+   "pct": -0.02
+  },
+  {
+   "name": "Nasdaq-100",
+   "level": "30,569.48",
+   "pct": -0.31
+  },
+  {
+   "name": "Dow",
+   "level": "51,670.10",
+   "pct": -0.35
+  },
+  {
+   "name": "Russell 2000",
+   "level": "2,783.37",
+   "pct": -0.4
+  }
+ ],
+ "drivers": "September CPI came in hot: headline rose 3.7% year over year versus 3.6% expected (0.6% month over month, in line), and core rose 2.6% versus 2.5%, driven by gas and energy. Futures turned lower after the print: S&P 500 −0.3%, Nasdaq-100 −0.6% and Russell 2000 −1.1%, while the 10-year yield rose 6 bp to 5.27% and the dollar firmed. Fed officials are leaning hawkish: New York Fed President Williams sees one more hike as appropriate this year and Boston's Collins wants another; CME FedWatch still shows ~78% odds of a hold at the next meeting. Oil is up 1.6% (WTI $95.63; Brent above $105) as Houthi attacks on Saudi energy facilities continue, and gold is down 1.1%. Korean stocks rebounded after a 12% five-day KOSPI slide; ASML posted record Q3 sales and raised its outlook but trades −1.3%. Bank results are mixed: Bank of America −7% after a $1.2B money-laundering penalty drove an EPS miss, State Street −8.7% on a revenue miss, Morgan Stanley −2.4% despite beating on equity trading, and BlackRock +2.3% on a beat. Barclays downgraded HPE, Dell and NetApp, citing no meaningful enterprise AI inflection yet.",
+ "calendar": [
+  {
+   "time": "Before open",
+   "event": "Earnings",
+   "detail": "ASML, BAC, MS, BLK, PGR, FAST, STT reported (see earnings)"
+  },
+  {
+   "time": "6:00 a.m.",
+   "event": "MBA mortgage applications (week to Oct 9)",
+   "detail": "Prior −4.2%"
+  },
+  {
+   "time": "7:30 a.m.",
+   "event": "CPI (Sep) — released",
+   "detail": "Headline 3.7% y/y vs 3.6% est.; 0.6% m/m in line; core 2.6% y/y vs 2.5% est."
+  },
+  {
+   "time": "1:00 p.m.",
+   "event": "Fed Beige Book",
+   "detail": "Usual 2 p.m. ET release"
+  },
+  {
+   "time": "Thu 7:30 a.m.",
+   "event": "PPI and retail sales (Sep)",
+   "detail": "Fed Chair Warsh speaks Thursday at IMF/World Bank meetings (per prior brief); TSMC results expected"
+  }
+ ],
+ "gainers": [
+  {
+   "ticker": "LQDA",
+   "company": "Liquidia",
+   "price": 36.71,
+   "pct": 36.93,
+   "volume": "2.52M",
+   "relvol": 0.975,
+   "catalyst": "Settled all United Therapeutics litigation ($380.7M), keeps Yutrepia on market; BTIG upgrade to Buy ($70 PT), BofA PT to $42"
+  },
+  {
+   "ticker": "GFS",
+   "company": "GlobalFoundries",
+   "price": 49.07,
+   "pct": 5.07,
+   "volume": "317K",
+   "relvol": 0.074,
+   "catalyst": "Selected to operate two new New York fabs under U.S.-Japan initiative"
+  },
+  {
+   "ticker": "ARWR",
+   "company": "Arrowhead Pharmaceuticals",
+   "price": 60.8,
+   "pct": 4.59,
+   "volume": "106K",
+   "relvol": 0.056,
+   "catalyst": "Interim Phase 1/2a ARO-MAPT data: up to 73% tau reduction"
+  },
+  {
+   "ticker": "VAL",
+   "company": "Valaris",
+   "price": 88.46,
+   "pct": 3.4,
+   "volume": "127K",
+   "relvol": 0.119,
+   "catalyst": "No company-specific news found; oil +1.6%"
+  },
+  {
+   "ticker": "SGHC",
+   "company": "Super Group (SGHC)",
+   "price": 11.54,
+   "pct": 3.13,
+   "volume": "11K",
+   "relvol": 0.005,
+   "catalyst": "No company-specific news found"
+  },
+  {
+   "ticker": "RIG",
+   "company": "Transocean",
+   "price": 5.8,
+   "pct": 2.65,
+   "volume": "2.10M",
+   "relvol": 0.051,
+   "catalyst": "No company-specific news found; oil +1.6%"
+  },
+  {
+   "ticker": "ACN",
+   "company": "Accenture",
+   "price": 219.09,
+   "pct": 2.59,
+   "volume": "51K",
+   "relvol": 0.008,
+   "catalyst": "Investor-day long-term growth targets"
+  },
+  {
+   "ticker": "BLK",
+   "company": "BlackRock",
+   "price": 1090.1,
+   "pct": 2.25,
+   "volume": "38K",
+   "relvol": 0.062,
+   "catalyst": "Q3 beat across the board"
+  },
+  {
+   "ticker": "ALB",
+   "company": "Albemarle",
+   "price": 99.5,
+   "pct": 1.89,
+   "volume": "67K",
+   "relvol": 0.028,
+   "catalyst": "Mizuho upgrade to Buy ($130 PT); Baird cut PT to $123"
+  },
+  {
+   "ticker": "INFY",
+   "company": "Infosys",
+   "price": 11.55,
+   "pct": 1.32,
+   "volume": "25K",
+   "relvol": 0.001,
+   "catalyst": "No company-specific news found"
+  }
+ ],
+ "losers": [
+  {
+   "ticker": "STT",
+   "company": "State Street",
+   "price": 159.0,
+   "pct": -8.67,
+   "volume": "78K",
+   "relvol": 0.041,
+   "catalyst": "Q3 EPS beat, revenue miss"
+  },
+  {
+   "ticker": "BAC",
+   "company": "Bank of America",
+   "price": 50.0,
+   "pct": -7.34,
+   "volume": "2.58M",
+   "relvol": 0.076,
+   "catalyst": "Q3 EPS $0.91 vs $1.10 est. after $1.2B AML penalty ($1.08 ex-penalty); revenue $30.0B vs ~$30.6B"
+  },
+  {
+   "ticker": "CRWV",
+   "company": "CoreWeave",
+   "price": 72.53,
+   "pct": -6.79,
+   "volume": "2.77M",
+   "relvol": 0.098,
+   "catalyst": "No company-specific catalyst; reports on debt funding (bond yield ~15%, FT on insurer financing)"
+  },
+  {
+   "ticker": "FAST",
+   "company": "Fastenal",
+   "price": 48.075,
+   "pct": -6.52,
+   "volume": "121K",
+   "relvol": 0.017,
+   "catalyst": "Q3 revenue beat; shares lower anyway"
+  },
+  {
+   "ticker": "PGR",
+   "company": "Progressive",
+   "price": 209.43,
+   "pct": -6.03,
+   "volume": "50K",
+   "relvol": 0.019,
+   "catalyst": "Q3 net income fell; net premiums earned rose"
+  },
+  {
+   "ticker": "GTLB",
+   "company": "GitLab",
+   "price": 49.31,
+   "pct": -5.08,
+   "volume": "32K",
+   "relvol": 0.007,
+   "catalyst": "No company-specific news found"
+  },
+  {
+   "ticker": "NBIS",
+   "company": "Nebius Group",
+   "price": 196.65,
+   "pct": -4.94,
+   "volume": "1.16M",
+   "relvol": 0.057,
+   "catalyst": "No company-specific news; AI-infrastructure names lower"
+  },
+  {
+   "ticker": "HPE",
+   "company": "Hewlett Packard Enterprise",
+   "price": 65.5,
+   "pct": -4.81,
+   "volume": "401K",
+   "relvol": 0.02,
+   "catalyst": "Barclays downgrade (no 'meaningful AI inflection')"
+  },
+  {
+   "ticker": "NTAP",
+   "company": "NetApp",
+   "price": 229.0,
+   "pct": -4.19,
+   "volume": "11K",
+   "relvol": 0.004,
+   "catalyst": "Barclays downgrade to Equalweight ($219 PT)"
+  },
+  {
+   "ticker": "IONQ",
+   "company": "IonQ",
+   "price": 33.29,
+   "pct": -4.15,
+   "volume": "2.58M",
+   "relvol": 0.12,
+   "catalyst": "No new company news today (Elisity deal announced Monday)"
+  }
+ ],
+ "active_shares": [
+  {
+   "ticker": "NOK",
+   "price": 9.78,
+   "pct": -0.81,
+   "volume": "5.94M",
+   "relvol": 0.071
+  },
+  {
+   "ticker": "CRWV",
+   "price": 72.53,
+   "pct": -6.79,
+   "volume": "2.77M",
+   "relvol": 0.098
+  },
+  {
+   "ticker": "INTC",
+   "price": 100.44,
+   "pct": -2.31,
+   "volume": "2.68M",
+   "relvol": 0.025
+  },
+  {
+   "ticker": "IONQ",
+   "price": 33.29,
+   "pct": -4.15,
+   "volume": "2.58M",
+   "relvol": 0.12
+  },
+  {
+   "ticker": "BAC",
+   "price": 50.0,
+   "pct": -7.34,
+   "volume": "2.58M",
+   "relvol": 0.076
+  },
+  {
+   "ticker": "LQDA",
+   "price": 36.71,
+   "pct": 36.93,
+   "volume": "2.52M",
+   "relvol": 0.975
+  },
+  {
+   "ticker": "KVUE",
+   "price": 17.89,
+   "pct": 0.73,
+   "volume": "2.35M",
+   "relvol": 0.107
+  },
+  {
+   "ticker": "RIG",
+   "price": 5.8,
+   "pct": 2.65,
+   "volume": "2.10M",
+   "relvol": 0.051
+  },
+  {
+   "ticker": "SOFI",
+   "price": 14.94,
+   "pct": -1.97,
+   "volume": "2.08M",
+   "relvol": 0.039
+  },
+  {
+   "ticker": "SPCX",
+   "price": 155.51,
+   "pct": -0.66,
+   "volume": "2.01M",
+   "relvol": 0.021
+  }
+ ],
+ "active_dollars": [
+  {
+   "ticker": "MU",
+   "dollar_volume": "$849M"
+  },
+  {
+   "ticker": "SNDK",
+   "dollar_volume": "$533M"
+  },
+  {
+   "ticker": "NVDA",
+   "dollar_volume": "$425M"
+  },
+  {
+   "ticker": "ASML",
+   "dollar_volume": "$405M"
+  },
+  {
+   "ticker": "SPCX",
+   "dollar_volume": "$313M"
+  }
+ ],
+ "active_dollars_note": "Pre-market price × pre-market volume (StockAnalysis, ~7:50 a.m. CT) over a ~175-name set of high-volume and moving names, not an exhaustive scan.",
+ "penny_gainers": [
+  {
+   "ticker": "TGL",
+   "company": "Treasure Global",
+   "price": 0.7,
+   "pct": 152.52,
+   "volume": "65.44M",
+   "mcap": "$0.5M",
+   "float": "n/a",
+   "flag": true,
+   "note": ">150% spike on an MOU press release; ~2.0M shares outstanding vs 65M traded. Pump-and-dump pattern."
+  },
+  {
+   "ticker": "GLND",
+   "company": "Greenland Energy",
+   "price": 4.23,
+   "pct": 91.4,
+   "volume": "52.47M",
+   "mcap": "$96.6M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Trump announced Greenland oil, gas and mineral exploration plans; theme-driven spike, volume exceeds shares outstanding"
+  },
+  {
+   "ticker": "YRD",
+   "company": "Yiren Digital",
+   "price": 0.84,
+   "pct": 84.88,
+   "volume": "77.55M",
+   "mcap": "$39.8M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No positive catalyst found; recent news is a Beijing police probe of CreditEase and an acting-CEO appointment. Volume ~970x average."
+  },
+  {
+   "ticker": "NIVF",
+   "company": "NewGenIvf Group",
+   "price": 0.28,
+   "pct": 40.84,
+   "volume": "93.31M",
+   "mcap": "$1.7M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No news found; sub-$1"
+  },
+  {
+   "ticker": "BDRX",
+   "company": "Biodexa Pharmaceuticals",
+   "price": 0.45,
+   "pct": 29.27,
+   "volume": "33.37M",
+   "mcap": "$0.4M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Phase 3 enrollment-milestone PR; ~2.2M shares outstanding vs 33M traded"
+  },
+  {
+   "ticker": "NCPL",
+   "company": "Netcapital",
+   "price": 1.74,
+   "pct": 24.82,
+   "volume": "1.78M",
+   "mcap": "$10.9M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No news found"
+  },
+  {
+   "ticker": "FFAI",
+   "company": "Faraday Future",
+   "price": 1.35,
+   "pct": 21.62,
+   "volume": "37.28M",
+   "mcap": "$6.6M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Definitive deal to combine its robotics unit at ~$200M valuation; ~6.1M shares outstanding vs 37M traded"
+  },
+  {
+   "ticker": "GENK",
+   "company": "GEN Restaurant Group",
+   "price": 1.71,
+   "pct": 17.93,
+   "volume": "581K",
+   "mcap": "$47.8M",
+   "float": "n/a",
+   "flag": false,
+   "note": "Binding LOI for $100M restaurant transaction with Chubby Group"
+  },
+  {
+   "ticker": "TCRT",
+   "company": "Alaunos Therapeutics",
+   "price": 3.54,
+   "pct": 16.83,
+   "volume": "24.40M",
+   "mcap": "$7.7M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Completed Velaris acquisition (reverse merger); ~2.9M shares outstanding. Up >80% Tuesday too."
+  },
+  {
+   "ticker": "MXCT",
+   "company": "MaxCyte",
+   "price": 1.12,
+   "pct": 16.15,
+   "volume": "543K",
+   "mcap": "$99.5M",
+   "float": "n/a",
+   "flag": false,
+   "note": "Preliminary Q3 revenue; raised 2026 revenue guidance"
+  }
+ ],
+ "penny_losers": [
+  {
+   "ticker": "CDT",
+   "company": "CDT Equity",
+   "price": 0.25,
+   "pct": -44.58,
+   "volume": "16.57M",
+   "mcap": "$0.5M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Only news is a patent-filing PR; sub-$1, ~1.1M shares outstanding"
+  },
+  {
+   "ticker": "SCNI",
+   "company": "Scinai Immunotherapeutics",
+   "price": 0.69,
+   "pct": -43.89,
+   "volume": "974K",
+   "mcap": "$0.7M",
+   "float": "n/a",
+   "flag": true,
+   "note": "$4.0M private placement and warrant inducement (dilution). Was +46% Tuesday."
+  },
+  {
+   "ticker": "YFOR",
+   "company": "YYForce",
+   "price": 0.6,
+   "pct": -40.44,
+   "volume": "715K",
+   "mcap": "$7.8M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Down despite humanoid-robot partnership PR; sub-$1"
+  },
+  {
+   "ticker": "JBDI",
+   "company": "JBDI Holdings",
+   "price": 2.46,
+   "pct": -28.28,
+   "volume": "1.13M",
+   "mcap": "$32.6M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No news found"
+  },
+  {
+   "ticker": "SDST",
+   "company": "Stardust Power",
+   "price": 0.03,
+   "pct": -23.44,
+   "volume": "23.39M",
+   "mcap": "$0.6M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No news found; sub-$0.05"
+  },
+  {
+   "ticker": "SHFS",
+   "company": "SHF Holdings",
+   "price": 0.22,
+   "pct": -20.46,
+   "volume": "2.14M",
+   "mcap": "$0.3M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No news found; sub-$1"
+  },
+  {
+   "ticker": "BMEA",
+   "company": "Biomea Fusion",
+   "price": 1.03,
+   "pct": -18.25,
+   "volume": "587K",
+   "mcap": "$91.3M",
+   "float": "n/a",
+   "flag": false,
+   "note": "Phase 1 results for oral GLP-1 BMF-650 (up to 6.1% weight loss)"
+  },
+  {
+   "ticker": "PFAI",
+   "company": "Pinnacle Food Group",
+   "price": 3.86,
+   "pct": -17.87,
+   "volume": "253K",
+   "mcap": "$55.2M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Unwinding Tuesday's +185% spike on a fermentation PR"
+  },
+  {
+   "ticker": "IZM",
+   "company": "ICZOOM Group",
+   "price": 1.04,
+   "pct": -17.46,
+   "volume": "178K",
+   "mcap": "$3.0M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No news found"
+  },
+  {
+   "ticker": "DKI",
+   "company": "DarkIris",
+   "price": 0.07,
+   "pct": -16.92,
+   "volume": "13.79M",
+   "mcap": "$0.3M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No news found; sub-$0.10, continued unwind"
+  }
+ ],
+ "leveraged": [
+  {
+   "ticker": "TQQQ",
+   "underlying": "Nasdaq-100",
+   "leverage": "3x bull",
+   "price": 77.62,
+   "pct": -1.51,
+   "volume": "3.97M",
+   "vol_vs_avg": "7% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.61
+  },
+  {
+   "ticker": "SQQQ",
+   "underlying": "Nasdaq-100",
+   "leverage": "3x bear",
+   "price": 34.51,
+   "pct": 1.54,
+   "volume": "6.50M",
+   "vol_vs_avg": "14% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.61
+  },
+  {
+   "ticker": "TSLL",
+   "underlying": "TSLA",
+   "leverage": "2x bull",
+   "price": 9.87,
+   "pct": -1.3,
+   "volume": "1.29M",
+   "vol_vs_avg": "2% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.61
+  },
+  {
+   "ticker": "TSLQ",
+   "underlying": "TSLA",
+   "leverage": "2x bear",
+   "price": 17.43,
+   "pct": 1.4,
+   "volume": "183K",
+   "vol_vs_avg": "3% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.61
+  },
+  {
+   "ticker": "SOXL",
+   "underlying": "Semiconductors",
+   "leverage": "3x bull",
+   "price": 121.17,
+   "pct": -5.02,
+   "volume": "9.19M",
+   "vol_vs_avg": "14% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -1.78
+  },
+  {
+   "ticker": "SOXS",
+   "underlying": "Semiconductors",
+   "leverage": "3x bear",
+   "price": 39.38,
+   "pct": 5.24,
+   "volume": "13.81M",
+   "vol_vs_avg": "22% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -1.78
+  },
+  {
+   "ticker": "NVDL",
+   "underlying": "NVDA",
+   "leverage": "2x bull",
+   "price": 35.85,
+   "pct": -2.0,
+   "volume": "425K",
+   "vol_vs_avg": "3% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.95
+  },
+  {
+   "ticker": "UPRO",
+   "underlying": "S&P 500",
+   "leverage": "3x bull",
+   "price": 154.19,
+   "pct": -0.78,
+   "volume": "125K",
+   "vol_vs_avg": "7% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.32
+  },
+  {
+   "ticker": "SPXU",
+   "underlying": "S&P 500",
+   "leverage": "3x bear",
+   "price": 33.24,
+   "pct": 1.0,
+   "volume": "718K",
+   "vol_vs_avg": "9% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.32
+  },
+  {
+   "ticker": "SPXL",
+   "underlying": "S&P 500",
+   "leverage": "3x bull",
+   "price": 295.15,
+   "pct": -0.76,
+   "volume": "117K",
+   "vol_vs_avg": "7% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.32
+  },
+  {
+   "ticker": "TNA",
+   "underlying": "Russell 2000",
+   "leverage": "3x bull",
+   "price": 55.0,
+   "pct": -3.02,
+   "volume": "596K",
+   "vol_vs_avg": "15% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -1.09
+  },
+  {
+   "ticker": "TZA",
+   "underlying": "Russell 2000",
+   "leverage": "3x bear",
+   "price": 49.8,
+   "pct": 3.19,
+   "volume": "322K",
+   "vol_vs_avg": "8% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -1.09
+  },
+  {
+   "ticker": "LABU",
+   "underlying": "S&P Biotech",
+   "leverage": "3x bull",
+   "price": 208.87,
+   "pct": -0.91,
+   "volume": "27K",
+   "vol_vs_avg": "7% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.37
+  },
+  {
+   "ticker": "FNGU",
+   "underlying": "NYSE FANG+",
+   "leverage": "3x bull",
+   "price": 36.42,
+   "pct": -0.74,
+   "volume": "91K",
+   "vol_vs_avg": "3% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": null
+  },
+  {
+   "ticker": "CONL",
+   "underlying": "COIN",
+   "leverage": "2x bull",
+   "price": 5.22,
+   "pct": -2.97,
+   "volume": "850K",
+   "vol_vs_avg": "4% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -1.42
+  },
+  {
+   "ticker": "MSTX",
+   "underlying": "MSTR",
+   "leverage": "2x bull",
+   "price": 17.4,
+   "pct": -1.86,
+   "volume": "571K",
+   "vol_vs_avg": "7% of 3-mo avg day (pre-mkt only)",
+   "underlying_pct": -0.97
+  }
+ ],
+ "leveraged_drivers": [
+  {
+   "group": "TQQQ / SQQQ",
+   "text": "Nasdaq-100 futures −0.6% after the hot CPI print and higher yields."
+  },
+  {
+   "group": "TSLL / TSLQ",
+   "text": "TSLA −0.6% pre-market with the tape; no company-specific catalyst found."
+  },
+  {
+   "group": "SOXL / SOXS",
+   "text": "SOXX −1.8%: ASML −1.3% despite a record quarter and raised outlook; SKHY −3.7%, MU −1.6%, AMD −1.9%."
+  },
+  {
+   "group": "NVDL",
+   "text": "NVDA −1.0% pre-market with the chip group; no company-specific catalyst found."
+  },
+  {
+   "group": "UPRO / SPXU / SPXL",
+   "text": "S&P 500 futures −0.3% after CPI beat estimates; bank earnings mixed."
+  },
+  {
+   "group": "TNA / TZA",
+   "text": "Russell 2000 futures −1.1%, the weakest index, as the 10-year yield rises to 5.27%."
+  },
+  {
+   "group": "LABU",
+   "text": "Biotech slightly lower (XBI −0.4%); LQDA +37% and ARWR +4.6% on company news."
+  },
+  {
+   "group": "FNGU",
+   "text": "FANG+ has no pre-market index quote; members mixed (GOOGL +1.0%, AAPL +1.0%, NVDA −1.0%, META −0.8%)."
+  },
+  {
+   "group": "CONL / MSTX",
+   "text": "Bitcoin −0.5% near $82.8K; COIN −1.4%, MSTR −1.0%."
+  }
+ ],
+ "leveraged_note": "ETF pre-market prices and volumes from StockAnalysis ~7:50 a.m. CT. Volume is shown against Yahoo's 3-month average day because a 30-day average was not available. Underlying proxies: NQ futures, TSLA, SOXX, NVDA, ES futures, RTY futures, XBI, COIN and MSTR pre-market. FANG+ has no pre-market quote.",
+ "unusual": [
+  {
+   "ticker": "YRD",
+   "relvol": 966.5,
+   "pct": 84.88,
+   "reason": "77.55M pre-market shares vs ~80K 3-mo avg; no positive catalyst found; flagged"
+  },
+  {
+   "ticker": "TGL",
+   "relvol": 129.7,
+   "pct": 152.52,
+   "reason": "65.44M pre-market shares vs ~505K 3-mo avg; MOU PR; flagged pump pattern"
+  },
+  {
+   "ticker": "FFAI",
+   "relvol": 17.5,
+   "pct": 21.62,
+   "reason": "37.28M pre-market shares vs ~2.13M 3-mo avg; robotics-unit deal at ~$200M valuation"
+  },
+  {
+   "ticker": "NIVF",
+   "relvol": 15.0,
+   "pct": 40.84,
+   "reason": "93.31M pre-market shares vs ~6.22M 3-mo avg; no news; flagged"
+  },
+  {
+   "ticker": "BDRX",
+   "relvol": 8.5,
+   "pct": 29.27,
+   "reason": "33.37M pre-market shares vs ~3.94M 3-mo avg; enrollment-milestone PR; flagged"
+  }
+ ],
+ "unusual_options": "n/a (no options-flow source available). No ≥$2B name is at 3× relative volume pre-market. Notable: LQDA has already traded 2.52M shares pre-market (~1.0× an average full day), and SOXS 13.8M (~22%).",
+ "earnings": {
+  "before_open": [
+   {
+    "ticker": "ASML",
+    "company": "ASML Holding",
+    "estimate": "$10.76",
+    "reaction": "−1.3% pre-market",
+    "note": "EPS $11.82; record Q3 sales; raised full-year outlook"
+   },
+   {
+    "ticker": "BAC",
+    "company": "Bank of America",
+    "estimate": "$1.10",
+    "reaction": "−7.3% pre-market",
+    "note": "EPS $0.91 ($1.08 ex $1.2B AML penalty); revenue $30.0B vs ~$30.6B est."
+   },
+   {
+    "ticker": "MS",
+    "company": "Morgan Stanley",
+    "estimate": "$2.92",
+    "reaction": "−2.4% pre-market",
+    "note": "Beat on equity trading; record wealth-management quarter"
+   },
+   {
+    "ticker": "BLK",
+    "company": "BlackRock",
+    "estimate": "$14.30",
+    "reaction": "+2.3% pre-market",
+    "note": "Beat across the board"
+   },
+   {
+    "ticker": "PGR",
+    "company": "Progressive",
+    "estimate": "$4.41",
+    "reaction": "−6.0% pre-market",
+    "note": "Q3 net income fell; net premiums earned rose"
+   },
+   {
+    "ticker": "FAST",
+    "company": "Fastenal",
+    "estimate": "$0.34",
+    "reaction": "−6.5% pre-market",
+    "note": "Beat on revenue and EPS (Zacks/StockStory)"
+   },
+   {
+    "ticker": "STT",
+    "company": "State Street",
+    "estimate": "$3.68",
+    "reaction": "−8.7% pre-market",
+    "note": "EPS beat, revenue miss"
+   }
+  ],
+  "after_close": [
+   {
+    "ticker": "HOMB",
+    "company": "Home BancShares",
+    "estimate": "$0.64",
+    "reaction": "n/a",
+    "note": "Yahoo calendar; others after close are small/micro-caps (EQBK, HKD, GLDG, CMTL, FNGR, RMCF)"
+   }
+  ]
+ },
+ "watchlist": {
+  "criteria": [
+   "Price ≥ $5 and market cap ≥ $2B",
+   "Pre-market gap ≥ +3% (gap up) or ≤ −3% (gap down) vs prior close",
+   "Confirmed news catalyst: earnings/guidance, M&A, analyst action, FDA/trial data, or major contract",
+   "Pre-market volume ≥ 100K shares; relative volume ≥ 3× preferred where available",
+   "Excluded: dilution/offering filings, reverse split in last 90 days, OTC listings, no identifiable news",
+   "Up to 10 names, ranked by absolute gap size"
+  ],
+  "items": [
+   {
+    "ticker": "LQDA",
+    "company": "Liquidia",
+    "direction": "up",
+    "prior_close": 26.81,
+    "premarket_price": 36.71,
+    "gap_pct": 36.93,
+    "relvol": 0.975,
+    "catalyst": "Settled all United Therapeutics litigation ($380.7M), keeps Yutrepia on market; BTIG upgrade to Buy ($70 PT), BofA PT to $42",
+    "risk": "Pre-market volume already ~1x a full average day; catalyst is a legal settlement plus analyst upgrade"
+   },
+   {
+    "ticker": "BAC",
+    "company": "Bank of America",
+    "direction": "down",
+    "prior_close": 53.96,
+    "premarket_price": 50.0,
+    "gap_pct": -7.34,
+    "relvol": 0.076,
+    "catalyst": "Q3 EPS $0.91 vs $1.10 est. after $1.2B AML penalty ($1.08 ex-penalty); revenue $30.0B vs ~$30.6B",
+    "risk": "Hot CPI also weighing on financials"
+   },
+   {
+    "ticker": "FAST",
+    "company": "Fastenal",
+    "direction": "down",
+    "prior_close": 51.43,
+    "premarket_price": 48.075,
+    "gap_pct": -6.52,
+    "relvol": 0.017,
+    "catalyst": "Q3 revenue beat; shares lower anyway",
+    "risk": "Fell despite a revenue beat; reason for the drop not confirmed"
+   },
+   {
+    "ticker": "GFS",
+    "company": "GlobalFoundries",
+    "direction": "up",
+    "prior_close": 46.7,
+    "premarket_price": 49.07,
+    "gap_pct": 5.07,
+    "relvol": 0.074,
+    "catalyst": "Selected to operate two new New York fabs under U.S.-Japan initiative",
+    "risk": ""
+   },
+   {
+    "ticker": "HPE",
+    "company": "Hewlett Packard Enterprise",
+    "direction": "down",
+    "prior_close": 68.81,
+    "premarket_price": 65.5,
+    "gap_pct": -4.81,
+    "relvol": 0.02,
+    "catalyst": "Barclays downgrade (no 'meaningful AI inflection')",
+    "risk": "Same Barclays note also downgraded DELL and NTAP"
+   },
+   {
+    "ticker": "ARWR",
+    "company": "Arrowhead Pharmaceuticals",
+    "direction": "up",
+    "prior_close": 58.13,
+    "premarket_price": 60.8,
+    "gap_pct": 4.59,
+    "relvol": 0.056,
+    "catalyst": "Interim Phase 1/2a ARO-MAPT data: up to 73% tau reduction",
+    "risk": "Interim healthy-volunteer data; pre-market volume just above 100K"
+   },
+   {
+    "ticker": "DELL",
+    "company": "Dell Technologies",
+    "direction": "down",
+    "prior_close": 572.47,
+    "premarket_price": 550.5,
+    "gap_pct": -3.84,
+    "relvol": 0.027,
+    "catalyst": "Barclays downgrade (no 'meaningful AI inflection')",
+    "risk": "Gap is close to the 3% threshold"
+   }
+  ],
+  "excluded": "No company-specific catalyst of a listed type: CRWV (−6.8%, 2.8M; debt-funding reports only), NBIS (−4.9%, 1.2M), IONQ (−4.2%, 2.6M), WULF (−3.9%, 151K), SKHY (−3.7%, 1.8M), APLD (−3.7%, 561K), IREN (−3.6%, 1.6M; Redbank capacity update), CRDO (−3.5%, 101K), RIOT (−3.4%, 134K), RKT (−3.3%, 239K), VAL (+3.4%, 127K). Pre-market volume under 100K: STT (−8.7%, 78K, revenue miss), PGR (−6.0%, 50K, Q3 results), GTLB (−5.1%, 32K, no news), NTAP (−4.2%, 11K, Barclays downgrade), SGHC (+3.1%, 11K), ESLT (+6.2%, 4K). Market cap under $2B: VIR (+9.4%, Gilead collaboration). Data artifact: SKYD.",
+  "empty_reason": "",
+  "price_label": "Pre-market",
+  "move_label": "Gap",
+  "subtitle": "Built pre-market (~7:55 a.m. CT) from live pre-market quotes vs Tuesday's close."
+ },
+ "sources": [
+  "Yahoo Finance screener, v7 quotes, ticker news search and earnings calendar via the Mac browser (~7:34–7:50 a.m. CT)",
+  "StockAnalysis.com pre-market gainers/losers and per-ticker pre-market quote API (~7:50 a.m. CT)",
+  "Yahoo Finance 'Stock market today' live blog, Oct 14 (CPI, BAC results, Fed speakers, oil)",
+  "Headlines via Yahoo news: MT Newswires, Investing.com, IBD, Barron's, WSJ, Business Wire (Arrowhead, Vir), GlobeNewswire (GlobalFoundries, MaxCyte), PR Newswire, Stocktwits, StockStory, Zacks, 24/7 Wall St."
+ ]
+}
