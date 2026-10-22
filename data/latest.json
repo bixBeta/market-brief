@@ -1,136 +1,147 @@
 {
- "date": "2026-10-21",
- "weekday": "Wednesday",
+ "date": "2026-10-22",
+ "weekday": "Thursday",
  "session": "PRE-MARKET",
- "generated_at": "2026-10-21T08:05:00-05:00",
- "data_as_of": "Futures, VIX, 10Y, DXY, oil, gold, BTC and overseas indexes: Yahoo v7 quotes ~7:33–7:48 a.m. CT. Stock and ETF pre-market prices and volumes: StockAnalysis quote API ~7:50 a.m. CT, cross-checked against Yahoo pre-market quotes (~7:40–7:49 a.m. CT). Under-$5 lists: StockAnalysis top-20 pre-market gainers/losers pages (dated Oct 21) ~7:50 a.m. CT. Cash closes are Tuesday Oct 20.",
- "headline": "Futures rise as SpaceX and Super Micro revive the AI trade: Nasdaq-100 futures +0.7%, S&P 500 +0.3%; Super Micro +12.5% on a raised outlook, Netflix −6.8% on soft guidance; Tesla and Meta report after the close.",
+ "generated_at": "2026-10-22T07:55:00-05:00",
+ "data_as_of": "Futures, VIX, 10Y, DXY, oil, gold, BTC and overseas indexes: Yahoo v7 quotes ~7:40–7:50 a.m. CT. Stock and ETF pre-market prices and volumes: StockAnalysis quote API ~7:55 a.m. CT, cross-checked against Yahoo pre-market quotes (~7:50 a.m. CT). Under-$5 lists: StockAnalysis top-20 pre-market gainers/losers pages (dated Oct 22) ~7:57 a.m. CT. Cash closes are Wednesday Oct 21.",
+ "headline": "Futures slide as AI-spending doubts return after Meta and Tesla and oil jumps on Middle East attacks: Nasdaq-100 futures −1.6%, S&P 500 −0.9%; chips lead losses (Lam −9%, SOXL −12%), Lockheed and Spotify rise on earnings.",
  "notes": [
-  "Scheduled run at ~7:48 a.m. CT, before the 8:30 a.m. CT open: PRE-MARKET. All movers use live pre-market data dated Oct 21 (StockAnalysis and Yahoo via the Mac browser); StockAnalysis movers pages were checked to be dated Oct 21.",
-  "Gap % = pre-market price vs Tuesday's close (StockAnalysis, ~7:50 a.m. CT). Quality movers were screened from Yahoo's US list of stocks ≥$5 and ≥$2B (top 3,000 by market cap; 800 had an Oct 21 pre-market quote) and priced on StockAnalysis; names with <10K pre-market shares were left out of the movers tables.",
-  "Thin names left out of the movers tables (<10K pre-market shares on StockAnalysis): KALU (+9.7%, 2.6K; no news found), LAD (+6.5%, 983; Q3 beat, dividend raised), AEIS (+4.3%, 1.3K), ONTO (+4.3%, 3.5K), TWST (−4.4%, 7.1K), WAB (−2.5%, 3.9K; revenue miss, guidance raised).",
+  "Scheduled run at ~7:50 a.m. CT, before the 8:30 a.m. CT open: PRE-MARKET. All movers use live pre-market data dated Oct 22 (StockAnalysis and Yahoo via the Mac browser); StockAnalysis movers pages were checked to be dated Oct 22.",
+  "Gap % = pre-market price vs Wednesday's close (StockAnalysis, ~7:55 a.m. CT). Quality movers were screened from Yahoo's US list of stocks ≥$5 and ≥$2B (top 3,000 by market cap; 903 had an Oct 22 pre-market quote) and priced on StockAnalysis; names with <10K pre-market shares were left out of the movers tables.",
+  "Thin names left out of the movers tables (<10K pre-market shares on StockAnalysis): CRS (−9.0%, 1.9K; FQ1 results), SNA (−8.2%, 4.6K; Q3 revenue miss), GGG (−8.2%, 181; Q3 miss), ONTO (−6.4%, 8.6K), DGX (−4.6%, 5.6K), BTSG (+4.2%, 1.4K), KNX (+2.8%, 1.8K), NDAQ (+2.3%, 4.1K). POOL: Yahoo +4.0% vs StockAnalysis −0.05% (8K shares) — left out because sources disagree.",
   "Relative volume = pre-market volume ÷ 3-month average full-day volume (Yahoo), so values are naturally small before the open.",
-  "Gap watchlist applied strictly: SMCI, ROIV, SPCX, AMKR, NFLX, T, APLD, PEGA, ABT and MBLY pass. AI-server peers DELL (+6.7%) and HPE (+4.6%) moved in sympathy with Super Micro without company news, so they are excluded. VRT's Nvidia DSX POD news was treated as a product/ecosystem announcement, not a contract.",
-  "DHR is −2.98% on StockAnalysis but −3.42% on Yahoo; StockAnalysis (primary) is below the 3% threshold, so DHR is excluded. A Yahoo-listed headline said Danaher shares rose pre-market on its Q3 beat; that is likely from earlier in the session.",
-  "TKNO (−31.4%, $40M offering at $5) and AVEX (−25.3%, Navy drone-boat program halt) are under $2B market cap and stay out of the ≥$2B lists; TKNO is also a dilution case.",
-  "Oil sources disagree: Yahoo's front-month quotes at ~7:38 a.m. CT show WTI $97.67 (−0.2%) and Brent $108.43 (−0.3%); a morning newsletter had Brent $110.77 (+1.8%) at 5:49 a.m. CT after Houthi attacks claimed on Aramco sites, and Yahoo's live blog said WTI 'near $100'. The table uses Yahoo's quotes.",
+  "Gap watchlist applied strictly: TTMI, LRCX, SPOT, IBM, TSCO, NOK, DOW, AAL, TSLA and CMCSA pass. Under 100K pre-market shares: LMT (+4.6%, 82K), RTO (+6.8%, 44K), CSX (+3.4%, 32K), BX (−3.3%, 55K), plus thin names above. Broad chip/AI-hardware and crypto declines (INTC, AMAT, KLAC, MRVL, LITE, COHR, SNDK, DELL, AAOI, MSTR, BMNR, SPCX, etc.) had no company-specific news and are excluded. FPS (−11.9%) news is a CFO change, not a listed catalyst type; HSAI (−10.1%) had no news found.",
+  "BHVN (+31–33%, 10.7M shares; FDA accepted its drug filing per Investing.com) is above $5 but its market cap (~$1.8B) is below $2B, so it is outside the quality lists and the watchlist.",
+  "Initial jobless claims were due 7:30 a.m. CT (est. 200K); the actual figure was not found at build time.",
+  "Oil: Yahoo front-month WTI $99.29 (+2.2%) and Brent $111.78 (+2.7%) at ~7:40 a.m. CT; Reuters had Brent $111.92 near a five-month high after more Houthi attacks in Saudi Arabia.",
   "Bitcoin change is Yahoo's 24-hour figure.",
   "Fed speakers: none listed; the Fed is in its pre-meeting quiet period ahead of the Oct 27–28 FOMC.",
   "Leveraged ETF volume is shown as pre-market volume vs the 3-month average daily volume (Yahoo) because a 30-day average was not retrieved. FNGU's underlying index has no pre-market quote (null).",
-  "Under-$5 lists come from StockAnalysis's top-20 pre-market pages only (a wider scan was not available); float is n/a (no float source). Shares outstanding from Yahoo are used for context.",
+  "Under-$5 lists come from StockAnalysis's top-20 pre-market pages only (a wider scan was not available); float is n/a (no float source). Market cap from StockAnalysis.",
   "Unusual options activity: no options-flow source available.",
-  "Nasdaq.com's earnings API needed a permission prompt via WebFetch and was read through the Mac browser instead. No git commands were run; the Mac publish agent handles commit and push."
+  "Earnings estimates were not retrieved for most companies (shown as n/a); reported figures are from Investrade, Reuters and headline wires.",
+  "No git commands were run; the Mac publish agent handles commit and push."
  ],
  "snapshot": [
   {
    "name": "S&P 500 futures",
-   "level": "7,779.75",
-   "change": "+24.50",
-   "pct": 0.32
+   "level": "7,728.25",
+   "change": "−72.00",
+   "pct": -0.92
   },
   {
    "name": "Nasdaq-100 futures",
-   "level": "29,877.50",
-   "change": "+202.25",
-   "pct": 0.68
+   "level": "29,529.50",
+   "change": "−477.50",
+   "pct": -1.59
   },
   {
    "name": "Dow futures",
-   "level": "52,885",
-   "change": "+166",
-   "pct": 0.31
+   "level": "52,807",
+   "change": "−252",
+   "pct": -0.47
   },
   {
    "name": "Russell 2000 futures",
-   "level": "2,797.40",
-   "change": "+10.50",
-   "pct": 0.38
+   "level": "2,778.80",
+   "change": "−15.40",
+   "pct": -0.55
   },
   {
    "name": "VIX",
-   "level": "17.20",
-   "change": "−0.11",
-   "pct": -0.64
+   "level": "17.99",
+   "change": "+1.31",
+   "pct": 7.85
   },
   {
    "name": "10Y yield",
-   "level": "5.09%",
-   "change": "−0.02 pt",
-   "pct": -0.49
+   "level": "5.04%",
+   "change": "−0.11 pt",
+   "pct": -2.14
   },
   {
    "name": "DXY",
-   "level": "101.71",
-   "change": "+0.01",
-   "pct": 0.01
+   "level": "101.80",
+   "change": "+0.02",
+   "pct": 0.02
   },
   {
    "name": "WTI crude",
-   "level": "97.67",
-   "change": "−0.15",
-   "pct": -0.15
+   "level": "99.29",
+   "change": "+2.14",
+   "pct": 2.2
   },
   {
    "name": "Gold",
-   "level": "4,145.20",
-   "change": "+2.60",
-   "pct": 0.06
+   "level": "4,093.40",
+   "change": "−56.60",
+   "pct": -1.36
   },
   {
    "name": "Bitcoin",
-   "level": "83,424",
-   "change": "+1,928 (24h)",
-   "pct": 2.37
+   "level": "81,711",
+   "change": "−1,688 (24h)",
+   "pct": -2.02
   }
  ],
  "cash_close": [
   {
    "name": "S&P 500",
-   "level": "7,712.57",
-   "pct": 0.28
+   "level": "7,757.17",
+   "pct": 0.58
   },
   {
    "name": "Nasdaq-100",
-   "level": "29,490.28",
-   "pct": -0.13
+   "level": "29,822.52",
+   "pct": 1.13
   },
   {
    "name": "Dow",
-   "level": "52,495.88",
-   "pct": 1.02
+   "level": "52,856.09",
+   "pct": 0.69
   },
   {
    "name": "Russell 2000",
-   "level": "2,773.42",
-   "pct": 1.65
+   "level": "2,781.02",
+   "pct": 0.27
   }
  ],
- "drivers": "The AI trade is bouncing: Nasdaq-100 futures +0.7% and S&P 500 futures +0.3% after SpaceX's first public-company quarter beat (revenue $14.6B vs $12.7B expected, about half from its AI unit) and Elon Musk said SpaceX and Tesla have formed special committees to study a merger (SpaceX +8.3%, Tesla +1.3%). Super Micro raised its preliminary fiscal Q1 revenue to $18.5–19.5B from $14.5–15.5B (+12.5%), lifting Dell, HPE, Amkor and the chip group after the Philadelphia semiconductor index's eight-session losing streak (SOXX +1.6% pre-market). Netflix (−6.8%) guided Q4 below estimates and cut its ad-revenue outlook; Intuitive Surgical (−6.6%) beat but disclosed a $450M legal charge; AT&T (−5.0%) beat and raised guidance but telecoms are weak on SpaceX competition worries. Elsewhere, Capital One, Elevance and Lithia beat, while Abbott (nutrition spinoff), Danaher, Moody's and Philip Morris slipped after results. The 10-year yield is ~5.09% and VIX ~17.2; oil is elevated (Brent ~$108–111) after Houthi attacks claimed on Aramco sites. Europe and Japan are higher (DAX +1.0%, Nikkei +0.9%) while the Hang Seng fell 0.9%. Tesla, Meta, IBM, Texas Instruments, Lam Research and SAP report after the close.",
+ "drivers": "Wednesday's AI rally is reversing: Nasdaq-100 futures are down 1.6% and S&P 500 futures 0.9% after Meta and Tesla results failed to ease worries about AI spending and returns. Meta slipped about 2% after announcing new non-voting Class C shares and a 2027 split alongside a big legal charge, and Tesla fell about 3.5% after cutting its 2026 capex plan to about $20B. Chip stocks lead the decline, with Lam Research down 9% after results and SOXX down about 4% pre-market. Oil is adding pressure: Brent is near $112, close to a five-month high, after more Houthi attacks in Saudi Arabia; Asia fell hard (Nikkei −2.7%, Hang Seng −3.0%) and Europe is lower. Treasuries are bid (10Y ~5.04%), the VIX is near 18, gold is down 1.4% and Bitcoin is down about 2%. The Fed is in its quiet period ahead of the Oct 27–28 FOMC.",
  "calendar": [
   {
    "time": "Before open",
    "event": "Earnings",
-   "detail": "PM, TMO, ABT, NEE, T, DHR, CME, ELV, MCO, WAB, NTRS, TDY, LAD reported (see earnings)"
+   "detail": "LMT, SPOT, DOW, CMCSA, PG, AAL, TTMI, TSCO, NOK, ALLE, CSX, SNA, CRS, BX, HON, UNP, DGX, VLO and others reported (see earnings)"
   },
   {
-   "time": "6:00 a.m.",
-   "event": "MBA mortgage applications (weekly)",
-   "detail": "Released; figures n/a"
+   "time": "7:30 a.m.",
+   "event": "Initial jobless claims (weekly)",
+   "detail": "Est. 200K (prior 199K); actual n/a at build time"
+  },
+  {
+   "time": "7:30 a.m.",
+   "event": "Continuing claims",
+   "detail": "Est. 1.72M"
+  },
+  {
+   "time": "9:00 a.m.",
+   "event": "Leading Index (Sep)",
+   "detail": "Est. −0.1% m/m"
   },
   {
    "time": "9:30 a.m.",
-   "event": "EIA weekly crude inventories",
+   "event": "EIA natural gas inventories",
    "detail": ""
   },
   {
-   "time": "12:00 p.m.",
-   "event": "$13B 20-year Treasury bond auction",
-   "detail": ""
+   "time": "10:00 a.m.",
+   "event": "Kansas City Fed manufacturing (Oct)",
+   "detail": "Prior 20"
   },
   {
    "time": "After close",
    "event": "Earnings",
-   "detail": "META, TSLA, LRCX, SAP, TXN, IBM, CSX, KMI, URI, WCN, CCI, LVS, LUV, MOH"
+   "detail": "WDC, NEM, DECK, BE, VRSN, SSNC, RNG, SAM, KNSL, MXL, APPF, BYD, SLM, REXR"
   },
   {
    "time": "Oct 27–28",
@@ -140,505 +151,505 @@
  ],
  "gainers": [
   {
-   "ticker": "SMCI",
-   "company": "Super Micro Computer",
-   "price": 36.54,
-   "pct": 12.53,
-   "volume": "4.27M",
-   "relvol": 0.095,
-   "catalyst": "Raised preliminary fiscal Q1 revenue to $18.5–19.5B from $14.5–15.5B; gross margin above guide"
+   "ticker": "SPOT",
+   "company": "Spotify Technology",
+   "price": 565.5,
+   "pct": 7.64,
+   "volume": "148K",
+   "relvol": 0.088,
+   "catalyst": "Q3 results: premium subscriber growth; Q4 operating-income guide €820M vs ~€813M est."
   },
   {
-   "ticker": "ROIV",
-   "company": "Roivant Sciences",
-   "price": 38.17,
-   "pct": 9.31,
-   "volume": "195K",
-   "relvol": 0.027,
-   "catalyst": "Brepocitinib met primary endpoint in two Phase 3 trials (CLARITY-1/2) in non-infectious uveitis"
+   "ticker": "RTO",
+   "company": "Rentokil Initial (ADR)",
+   "price": 22.48,
+   "pct": 6.84,
+   "volume": "44K",
+   "relvol": 0.024,
+   "catalyst": "Q3 update; expects 2026 profit in line with market forecasts"
   },
   {
-   "ticker": "SPCX",
-   "company": "SpaceX",
-   "price": 160.02,
-   "pct": 8.28,
-   "volume": "12.59M",
-   "relvol": 0.132,
-   "catalyst": "Q3 beat (rev $14.6B vs $12.7B est.); SpaceX and Tesla form committees to study a merger"
+   "ticker": "SSL",
+   "company": "Sasol (ADR)",
+   "price": 17.24,
+   "pct": 6.49,
+   "volume": "48K",
+   "relvol": 0.031,
+   "catalyst": "No company news found; oil up ~2% (Brent ~$112)"
   },
   {
-   "ticker": "AMKR",
-   "company": "Amkor Technology",
-   "price": 45.04,
-   "pct": 8.01,
-   "volume": "275K",
-   "relvol": 0.059,
-   "catalyst": "Expanded Nvidia advanced-packaging partnership for AI infrastructure"
+   "ticker": "ALLE",
+   "company": "Allegion",
+   "price": 168.0,
+   "pct": 5.66,
+   "volume": "13K",
+   "relvol": 0.01,
+   "catalyst": "Q3 beat; 2026 outlook raised"
   },
   {
-   "ticker": "DELL",
-   "company": "Dell Technologies",
-   "price": 492.5,
-   "pct": 6.7,
-   "volume": "269K",
-   "relvol": 0.035,
-   "catalyst": "AI-server peer move on Super Micro's raised outlook; no company news"
+   "ticker": "LMT",
+   "company": "Lockheed Martin",
+   "price": 577.0,
+   "pct": 4.62,
+   "volume": "82K",
+   "relvol": 0.069,
+   "catalyst": "Q3 EPS $7.97 vs $7.52 est.; 2026 EPS guide raised to $30.35–30.75; record $292B backlog"
   },
   {
-   "ticker": "CRDO",
-   "company": "Credo Technology",
-   "price": 182.5,
-   "pct": 6.41,
-   "volume": "143K",
-   "relvol": 0.02,
-   "catalyst": "AI-trade rebound; no company-specific news found"
+   "ticker": "DOW",
+   "company": "Dow Inc.",
+   "price": 31.72,
+   "pct": 4.41,
+   "volume": "110K",
+   "relvol": 0.012,
+   "catalyst": "Q3 operating EPS $0.71 vs $0.64 est.; revenue $11.27B beat"
   },
   {
-   "ticker": "VRT",
-   "company": "Vertiv",
-   "price": 216.0,
-   "pct": 6.11,
-   "volume": "138K",
-   "relvol": 0.025,
-   "catalyst": "Named in Nvidia DSX POD AI-factory design announcements"
+   "ticker": "CSX",
+   "company": "CSX",
+   "price": 50.04,
+   "pct": 3.39,
+   "volume": "32K",
+   "relvol": 0.003,
+   "catalyst": "Q3 adj. EPS $0.44 missed $0.53 est.; revenue $4.02B beat; FCF growth >80% guided"
   },
   {
-   "ticker": "DOCN",
-   "company": "DigitalOcean",
-   "price": 105.5,
-   "pct": 6.05,
-   "volume": "13.7K",
-   "relvol": 0.005,
-   "catalyst": "Piper Sandler upgrade to Overweight (target cut to $126 from $142)"
-  },
-  {
-   "ticker": "LITE",
-   "company": "Lumentum",
-   "price": 865.0,
-   "pct": 5.17,
-   "volume": "108K",
-   "relvol": 0.023,
-   "catalyst": "AI-optics rebound; no company-specific news found"
-  },
-  {
-   "ticker": "AAOI",
-   "company": "Applied Optoelectronics",
-   "price": 80.43,
-   "pct": 4.81,
-   "volume": "340K",
+   "ticker": "CMCSA",
+   "company": "Comcast",
+   "price": 22.75,
+   "pct": 3.03,
+   "volume": "954K",
    "relvol": 0.033,
-   "catalyst": "AI-optics rebound; no company-specific news found"
+   "catalyst": "Q3 earnings topped estimates; broadband losses continue"
+  },
+  {
+   "ticker": "SONY",
+   "company": "Sony Group (ADR)",
+   "price": 25.84,
+   "pct": 2.95,
+   "volume": "72K",
+   "relvol": 0.017,
+   "catalyst": "No specific news found"
+  },
+  {
+   "ticker": "PG",
+   "company": "Procter & Gamble",
+   "price": 160.82,
+   "pct": 2.54,
+   "volume": "291K",
+   "relvol": 0.033,
+   "catalyst": "Q3 (FQ1) beat; price increases have not hurt demand"
   }
  ],
  "losers": [
   {
-   "ticker": "NFLX",
-   "company": "Netflix",
-   "price": 64.03,
-   "pct": -6.78,
-   "volume": "4.04M",
-   "relvol": 0.118,
-   "catalyst": "Q4 revenue/profit guidance below estimates; 2026 ad-revenue outlook cut to ~$2.7B"
+   "ticker": "TTMI",
+   "company": "TTM Technologies",
+   "price": 89.0,
+   "pct": -12.87,
+   "volume": "416K",
+   "relvol": 0.153,
+   "catalyst": "Q3 beat and initial 2027 outlook, but shares fall"
   },
   {
-   "ticker": "ISRG",
-   "company": "Intuitive Surgical",
-   "price": 409.05,
-   "pct": -6.61,
-   "volume": "85K",
-   "relvol": 0.034,
-   "catalyst": "Q3 beat, but $450M pre-tax charge for a da Vinci legal settlement"
+   "ticker": "FPS",
+   "company": "Forgent Power Solutions",
+   "price": 27.99,
+   "pct": -11.87,
+   "volume": "477K",
+   "relvol": 0.058,
+   "catalyst": "CFO transition announced (Amy Ard named CFO)"
   },
   {
-   "ticker": "T",
-   "company": "AT&T",
-   "price": 22.25,
-   "pct": -5.0,
-   "volume": "3.36M",
-   "relvol": 0.073,
-   "catalyst": "Q3 beat and EPS guide raised to ~$2.40; wireless adds underwhelmed, telecoms weak on SpaceX competition"
+   "ticker": "HSAI",
+   "company": "Hesai Group (ADR)",
+   "price": 11.86,
+   "pct": -10.08,
+   "volume": "151K",
+   "relvol": 0.099,
+   "catalyst": "No company news found; AI/tech selloff"
   },
   {
-   "ticker": "PEGA",
-   "company": "Pegasystems",
-   "price": 34.66,
-   "pct": -4.33,
-   "volume": "120K",
-   "relvol": 0.046,
-   "catalyst": "Q3 EPS $0.35 and revenue $393M missed estimates"
+   "ticker": "LRCX",
+   "company": "Lam Research",
+   "price": 236.48,
+   "pct": -9.33,
+   "volume": "458K",
+   "relvol": 0.049,
+   "catalyst": "FQ1 record $8.22B revenue, slight beat; Q2 guide midpoint ~in line; Needham PT cut to $290"
   },
   {
-   "ticker": "XPEV",
-   "company": "XPeng",
-   "price": 9.49,
-   "pct": -4.24,
-   "volume": "354K",
-   "relvol": 0.05,
-   "catalyst": "No news found; up ~8% Tuesday"
+   "ticker": "IBM",
+   "company": "IBM",
+   "price": 233.0,
+   "pct": -7.34,
+   "volume": "414K",
+   "relvol": 0.068,
+   "catalyst": "Q3 beat ($17.1B revenue); software +8%, consulting flat; FY outlook maintained"
   },
   {
-   "ticker": "ABT",
-   "company": "Abbott Laboratories",
-   "price": 98.25,
-   "pct": -4.1,
-   "volume": "714K",
-   "relvol": 0.081,
-   "catalyst": "Q3 revenue beat; plans to spin off its nutrition business; 2026 outlook updated"
+   "ticker": "TSCO",
+   "company": "Tractor Supply",
+   "price": 30.5,
+   "pct": -6.7,
+   "volume": "101K",
+   "relvol": 0.009,
+   "catalyst": "Q3 sales beat but earnings declined; FY26 outlook reaffirmed"
   },
   {
-   "ticker": "MBLY",
-   "company": "Mobileye",
-   "price": 7.01,
-   "pct": -3.97,
-   "volume": "110K",
+   "ticker": "VICR",
+   "company": "Vicor",
+   "price": 199.75,
+   "pct": -6.41,
+   "volume": "18K",
    "relvol": 0.019,
-   "catalyst": "RBC downgrade to Underperform, target cut to $5 from $7"
+   "catalyst": "No new news; chip/AI hardware selloff (reported Q3 Tuesday)"
   },
   {
-   "ticker": "MCO",
-   "company": "Moody's",
-   "price": 460.0,
-   "pct": -3.23,
-   "volume": "85K",
-   "relvol": 0.108,
-   "catalyst": "Q3 revenue missed estimates"
+   "ticker": "NOK",
+   "company": "Nokia (ADR)",
+   "price": 8.66,
+   "pct": -6.38,
+   "volume": "10.92M",
+   "relvol": 0.137,
+   "catalyst": "Q3 comparable earnings and sales rose; Q4 growth outlook issued"
   },
   {
-   "ticker": "DHR",
-   "company": "Danaher",
-   "price": 217.55,
-   "pct": -2.98,
-   "volume": "958K",
-   "relvol": 0.216,
-   "catalyst": "Q3 results beat estimates; shares lower anyway"
+   "ticker": "ROL",
+   "company": "Rollins",
+   "price": 31.39,
+   "pct": -6.16,
+   "volume": "28K",
+   "relvol": 0.004,
+   "catalyst": "Extends Wednesday drop after Q3 revenue/earnings miss"
   },
   {
-   "ticker": "FTNT",
-   "company": "Fortinet",
-   "price": 166.15,
-   "pct": -2.8,
-   "volume": "36K",
-   "relvol": 0.008,
-   "catalyst": "Arete double downgrade to Sell, $117 target"
+   "ticker": "MXL",
+   "company": "MaxLinear",
+   "price": 71.17,
+   "pct": -6.1,
+   "volume": "40K",
+   "relvol": 0.013,
+   "catalyst": "Reports after close today; chip selloff"
   }
  ],
  "active_shares": [
   {
    "ticker": "SPCX",
-   "price": 160.02,
-   "pct": 8.28,
-   "volume": "12.59M",
-   "relvol": 0.132
+   "price": 154.37,
+   "pct": -3.1,
+   "volume": "13.49M",
+   "relvol": 0.138
   },
   {
    "ticker": "NOK",
-   "price": 9.3,
-   "pct": 3.1,
-   "volume": "4.63M",
-   "relvol": 0.058
-  },
-  {
-   "ticker": "SMCI",
-   "price": 36.54,
-   "pct": 12.53,
-   "volume": "4.27M",
-   "relvol": 0.095
-  },
-  {
-   "ticker": "NFLX",
-   "price": 64.03,
-   "pct": -6.78,
-   "volume": "4.04M",
-   "relvol": 0.118
-  },
-  {
-   "ticker": "T",
-   "price": 22.25,
-   "pct": -5.0,
-   "volume": "3.36M",
-   "relvol": 0.073
-  },
-  {
-   "ticker": "NVDA",
-   "price": 220.35,
-   "pct": 1.79,
-   "volume": "2.28M",
-   "relvol": 0.019
-  },
-  {
-   "ticker": "IREN",
-   "price": 27.72,
-   "pct": 4.13,
-   "volume": "2.15M",
-   "relvol": 0.048
+   "price": 8.66,
+   "pct": -6.38,
+   "volume": "10.92M",
+   "relvol": 0.137
   },
   {
    "ticker": "INTC",
-   "price": 93.28,
-   "pct": 1.73,
-   "volume": "1.85M",
-   "relvol": 0.017
-  },
-  {
-   "ticker": "TSLA",
-   "price": 378.71,
-   "pct": 1.34,
-   "volume": "1.74M",
-   "relvol": 0.046
+   "price": 88.27,
+   "pct": -5.05,
+   "volume": "3.29M",
+   "relvol": 0.031
   },
   {
    "ticker": "CRWV",
-   "price": 63.85,
-   "pct": 2.77,
-   "volume": "1.65M",
+   "price": 59.25,
+   "pct": -4.16,
+   "volume": "2.81M",
+   "relvol": 0.079
+  },
+  {
+   "ticker": "AAL",
+   "price": 11.72,
+   "pct": -4.21,
+   "volume": "2.59M",
+   "relvol": 0.041
+  },
+  {
+   "ticker": "IREN",
+   "price": 26.64,
+   "pct": -4.31,
+   "volume": "2.19M",
    "relvol": 0.048
+  },
+  {
+   "ticker": "TSLA",
+   "price": 373.06,
+   "pct": -3.47,
+   "volume": "2.13M",
+   "relvol": 0.056
+  },
+  {
+   "ticker": "NVDA",
+   "price": 216.85,
+   "pct": -2.31,
+   "volume": "2.00M",
+   "relvol": 0.017
+  },
+  {
+   "ticker": "META",
+   "price": 681.3,
+   "pct": -2.33,
+   "volume": "1.54M",
+   "relvol": 0.08
+  },
+  {
+   "ticker": "NBIS",
+   "price": 164.98,
+   "pct": -3.84,
+   "volume": "1.39M",
+   "relvol": 0.066
   }
  ],
  "active_dollars": [
   {
    "ticker": "SPCX",
-   "dollar_volume": "$2,015M"
+   "dollar_volume": "$2,082M"
+  },
+  {
+   "ticker": "META",
+   "dollar_volume": "$1,049M"
   },
   {
    "ticker": "TSLA",
-   "dollar_volume": "$661M"
+   "dollar_volume": "$794M"
   },
   {
    "ticker": "MU",
-   "dollar_volume": "$602M"
-  },
-  {
-   "ticker": "GOOGL",
-   "dollar_volume": "$554M"
+   "dollar_volume": "$587M"
   },
   {
    "ticker": "NVDA",
-   "dollar_volume": "$503M"
+   "dollar_volume": "$434M"
   }
  ],
- "active_dollars_note": "Pre-market price × pre-market volume (StockAnalysis, ~7:50 a.m. CT) over a ~290-name set of high-volume (≥7M 3-mo avg) and moving names, not an exhaustive scan.",
+ "active_dollars_note": "Pre-market price × pre-market volume (StockAnalysis, ~7:55 a.m. CT) over a ~180-name set of large-cap, high-volume and moving names, not an exhaustive scan.",
  "penny_gainers": [
   {
-   "ticker": "RBNE",
-   "company": "Robin Energy",
-   "price": 1.04,
-   "pct": 161.44,
-   "volume": "44.58M",
-   "mcap": "$232K",
+   "ticker": "STAK",
+   "company": "STAK Inc.",
+   "price": 1.58,
+   "pct": 58.0,
+   "volume": "28.36M",
+   "mcap": "$19.2M",
    "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; >100% spike on ~33x shares outstanding (~1.3M); fell ~24% Tuesday. Pump-and-dump pattern."
+   "flag": false,
+   "note": "FY2026 results released yesterday evening; ~2.8x shares outstanding traded pre-market"
   },
   {
    "ticker": "SHFS",
    "company": "SHF Holdings",
-   "price": 0.16,
-   "pct": 74.31,
-   "volume": "240.06M",
-   "mcap": "$92K",
+   "price": 0.23,
+   "pct": 47.86,
+   "volume": "163.55M",
+   "mcap": "$158K",
    "float": "n/a",
    "flag": true,
-   "note": "Nasdaq granted 180-day compliance extension; sub-$0.20 price, volume ~230x shares outstanding"
-  },
-  {
-   "ticker": "OLOX",
-   "company": "Olenox Industries",
-   "price": 1.17,
-   "pct": 58.75,
-   "volume": "64.57M",
-   "mcap": "$1.2M",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; very small share count (~1.7M)"
-  },
-  {
-   "ticker": "AHT",
-   "company": "Ashford Hospitality Trust",
-   "price": 2.52,
-   "pct": 40.78,
-   "volume": "11.36M",
-   "mcap": "$11.8M",
-   "float": "n/a",
-   "flag": false,
-   "note": "Advisor to waive ~$17M fees and buy AHT stock quarterly; ended at-the-market offering"
-  },
-  {
-   "ticker": "WHLR",
-   "company": "Wheeler REIT",
-   "price": 0.45,
-   "pct": 24.66,
-   "volume": "52.08M",
-   "mcap": "$31K",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; sub-$0.50 price; volume ~35x shares outstanding"
-  },
-  {
-   "ticker": "SPHL",
-   "company": "Springview Holdings",
-   "price": 3.01,
-   "pct": 23.87,
-   "volume": "4.62M",
-   "mcap": "$29.8M",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; up ~7% Tuesday"
-  },
-  {
-   "ticker": "INVE",
-   "company": "INVE Technologies",
-   "price": 2.68,
-   "pct": 20.72,
-   "volume": "6.45M",
-   "mcap": "$53.8M",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news"
-  },
-  {
-   "ticker": "SXTC",
-   "company": "China SXT Pharmaceuticals",
-   "price": 0.08,
-   "pct": 18.53,
-   "volume": "103.52M",
-   "mcap": "$86K",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; sub-$0.10 price; fell 44% Tuesday"
-  },
-  {
-   "ticker": "YMAT",
-   "company": "J-Star Holding",
-   "price": 2.35,
-   "pct": 16.92,
-   "volume": "3.58M",
-   "mcap": "$8.1M",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news"
-  },
-  {
-   "ticker": "TNMG",
-   "company": "TNL Mediagene",
-   "price": 3.31,
-   "pct": 10.33,
-   "volume": "321K",
-   "mcap": "$959K",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; ~0.76M shares outstanding"
-  }
- ],
- "penny_losers": [
-  {
-   "ticker": "NIVF",
-   "company": "NewGenIvf Group",
-   "price": 0.19,
-   "pct": -24.77,
-   "volume": "10.33M",
-   "mcap": "$2.2M",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; sub-$0.20 price"
-  },
-  {
-   "ticker": "HKPD",
-   "company": "Cellyan Biotechnology",
-   "price": 0.09,
-   "pct": -24.02,
-   "volume": "284K",
-   "mcap": "$2.6M",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; sub-$0.10 price"
-  },
-  {
-   "ticker": "INLF",
-   "company": "INLIF Limited",
-   "price": 0.21,
-   "pct": -18.06,
-   "volume": "2.38M",
-   "mcap": "$285K",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news"
-  },
-  {
-   "ticker": "NWGL",
-   "company": "CL Workshop Group",
-   "price": 0.13,
-   "pct": -16.29,
-   "volume": "9.31M",
-   "mcap": "$4.4M",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news; reversing ~28% Tuesday jump"
+   "note": "No identifiable news; sub-$0.25 price, ~$158K market cap; 163M shares vs ~1M outstanding — pump-and-dump pattern"
   },
   {
    "ticker": "CJMB",
    "company": "Callan JMB",
-   "price": 0.57,
-   "pct": -14.37,
-   "volume": "150K",
-   "mcap": "$3.8M",
+   "price": 0.73,
+   "pct": 42.66,
+   "volume": "46.51M",
+   "mcap": "$2.9M",
    "float": "n/a",
    "flag": false,
-   "note": "Blueprints approved for planned IV-bag facility; fell ~66% Tuesday"
+   "note": "Announced groundbreaking on IV-bag manufacturing facility (third-party funded); micro-cap"
   },
   {
-   "ticker": "HCAI",
-   "company": "Huachen AI Parking Mgmt",
+   "ticker": "NCPL",
+   "company": "Netcapital",
+   "price": 2.07,
+   "pct": 31.85,
+   "volume": "1.58M",
+   "mcap": "$12.3M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news (only \"top gainers\" lists)"
+  },
+  {
+   "ticker": "BKYI",
+   "company": "BIO-key International",
+   "price": 2.58,
+   "pct": 22.86,
+   "volume": "12.31M",
+   "mcap": "$3.5M",
+   "float": "n/a",
+   "flag": false,
+   "note": "New Middle East government contract; ~6x shares outstanding traded"
+  },
+  {
+   "ticker": "PFSA",
+   "company": "Profusa",
+   "price": 1.04,
+   "pct": 22.47,
+   "volume": "12.43M",
+   "mcap": "$514K",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news; ~$0.5M market cap, ~20x shares outstanding traded"
+  },
+  {
+   "ticker": "XLAB",
+   "company": "Exascale Labs Holdings",
+   "price": 3.13,
+   "pct": 15.07,
+   "volume": "8.87M",
+   "mcap": "$248M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news"
+  },
+  {
+   "ticker": "ATOM",
+   "company": "Atomera",
+   "price": 3.43,
+   "pct": 13.58,
+   "volume": "186K",
+   "mcap": "$118M",
+   "float": "n/a",
+   "flag": false,
+   "note": "Joint development agreement with IQE on RF GaN-on-silicon"
+  },
+  {
+   "ticker": "SNAL",
+   "company": "Snail Inc.",
+   "price": 2.55,
+   "pct": 12.83,
+   "volume": "104K",
+   "mcap": "$20M",
+   "float": "n/a",
+   "flag": false,
+   "note": "Game-portfolio PR (positive Steam reviews) yesterday"
+  },
+  {
+   "ticker": "HTCO",
+   "company": "High-Trend International",
+   "price": 1.29,
+   "pct": 9.32,
+   "volume": "572K",
+   "mcap": "$10M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news"
+  }
+ ],
+ "penny_losers": [
+  {
+   "ticker": "SXTC",
+   "company": "China SXT Pharmaceuticals",
+   "price": 0.05,
+   "pct": -30.14,
+   "volume": "21.92M",
+   "mcap": "$96K",
+   "float": "n/a",
+   "flag": true,
+   "note": "Announced share consolidation (reverse split) this morning; sub-$0.10"
+  },
+  {
+   "ticker": "TWG",
+   "company": "Top Wealth Group",
+   "price": 0.05,
+   "pct": -29.63,
+   "volume": "4.66M",
+   "mcap": "$4.2M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Announced 1-for-100 share consolidation (reverse split)"
+  },
+  {
+   "ticker": "WHLR",
+   "company": "Wheeler REIT",
+   "price": 0.4,
+   "pct": -25.15,
+   "volume": "856K",
+   "mcap": "$45K",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news; history of reverse splits"
+  },
+  {
+   "ticker": "MERC",
+   "company": "Mercer International",
+   "price": 0.16,
+   "pct": -23.04,
+   "volume": "242K",
+   "mcap": "$13.8M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Report that it is preparing a possible Chapter 11 filing"
+  },
+  {
+   "ticker": "POM",
+   "company": "Pomdoctor",
+   "price": 2.35,
+   "pct": -21.93,
+   "volume": "4.42M",
+   "mcap": "$28M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news"
+  },
+  {
+   "ticker": "RBNE",
+   "company": "Robin Energy",
+   "price": 0.18,
+   "pct": -21.47,
+   "volume": "56.10M",
+   "mcap": "$135K",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news; reverses part of Tuesday’s >100% spike; ~40x shares outstanding traded"
+  },
+  {
+   "ticker": "YFOR",
+   "company": "YYForce",
    "price": 0.21,
-   "pct": -14.02,
-   "volume": "480K",
-   "mcap": "$2.0M",
-   "float": "n/a",
-   "flag": true,
-   "note": "No identifiable news"
-  },
-  {
-   "ticker": "PRSO",
-   "company": "Peraso",
-   "price": 0.51,
-   "pct": -13.04,
-   "volume": "936K",
-   "mcap": "$8.9M",
+   "pct": -20.93,
+   "volume": "1.95M",
+   "mcap": "$2.1M",
    "float": "n/a",
    "flag": false,
-   "note": "Giving back Tuesday's ~54% jump on a >$2M production order"
+   "note": "Product PRs (robotics platform); sub-$0.25"
   },
   {
-   "ticker": "FRTT",
-   "company": "Fort Technology",
-   "price": 0.62,
-   "pct": -12.68,
-   "volume": "893K",
-   "mcap": "$9.1M",
+   "ticker": "NIVF",
+   "company": "NewGenIvf Group",
+   "price": 0.15,
+   "pct": -20.81,
+   "volume": "1.03M",
+   "mcap": "$1.7M",
    "float": "n/a",
    "flag": true,
-   "note": "Reversing Tuesday's pump-pattern spike on a distribution-agreement PR"
+   "note": "No identifiable news; sub-$0.20"
   },
   {
-   "ticker": "LABT",
-   "company": "Lakewood-Amedex Biotherapeutics",
-   "price": 0.52,
-   "pct": -9.96,
-   "volume": "224K",
-   "mcap": "$1.4M",
+   "ticker": "LHSW",
+   "company": "Lianhe Sowell International",
+   "price": 0.83,
+   "pct": -18.67,
+   "volume": "314K",
+   "mcap": "$11.1M",
    "float": "n/a",
    "flag": true,
-   "note": "No identifiable news"
+   "note": "Announced 1-for-8 share consolidation (reverse split)"
   },
   {
-   "ticker": "DKI",
-   "company": "Darkiris",
-   "price": 0.04,
-   "pct": -9.19,
-   "volume": "17.99M",
-   "mcap": "$144K",
+   "ticker": "NWGL",
+   "company": "CL Workshop Group",
+   "price": 0.1,
+   "pct": -17.91,
+   "volume": "4.56M",
+   "mcap": "$3.7M",
    "float": "n/a",
    "flag": true,
-   "note": "Announced 1-for-50 reverse split; sub-$0.05 price"
+   "note": "No identifiable news; sub-$0.15"
   }
  ],
  "leveraged": [
@@ -646,139 +657,139 @@
    "ticker": "TQQQ",
    "underlying": "Nasdaq-100",
    "leverage": "3x bull",
-   "price": 71.53,
-   "pct": 1.59,
-   "volume": "3.24M",
-   "vol_vs_avg": "6% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 0.68
+   "price": 69.19,
+   "pct": -4.71,
+   "volume": "5.74M",
+   "vol_vs_avg": "11% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -1.59
   },
   {
    "ticker": "SQQQ",
    "underlying": "Nasdaq-100",
    "leverage": "3x bear",
-   "price": 37.07,
-   "pct": -1.62,
-   "volume": "2.68M",
-   "vol_vs_avg": "6% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 0.68
+   "price": 38.18,
+   "pct": 4.66,
+   "volume": "6.14M",
+   "vol_vs_avg": "13% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -1.59
   },
   {
    "ticker": "TSLL",
    "underlying": "TSLA",
    "leverage": "2x bull",
-   "price": 10.13,
-   "pct": 2.74,
-   "volume": "3.64M",
-   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 1.34
+   "price": 9.81,
+   "pct": -6.75,
+   "volume": "7.30M",
+   "vol_vs_avg": "9% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -3.47
   },
   {
    "ticker": "TSLQ",
    "underlying": "TSLA",
    "leverage": "2x bear",
-   "price": 16.79,
-   "pct": -2.55,
-   "volume": "180K",
-   "vol_vs_avg": "3% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 1.34
+   "price": 17.12,
+   "pct": 6.6,
+   "volume": "789K",
+   "vol_vs_avg": "15% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -3.47
   },
   {
    "ticker": "SOXL",
    "underlying": "Semiconductors (ICE)",
    "leverage": "3x bull",
-   "price": 102.37,
-   "pct": 4.94,
-   "volume": "8.35M",
-   "vol_vs_avg": "12% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 1.6
+   "price": 91.05,
+   "pct": -11.81,
+   "volume": "14.55M",
+   "vol_vs_avg": "21% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -3.96
   },
   {
    "ticker": "SOXS",
    "underlying": "Semiconductors (ICE)",
    "leverage": "3x bear",
-   "price": 44.81,
-   "pct": -4.92,
-   "volume": "7.21M",
-   "vol_vs_avg": "11% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 1.6
+   "price": 49.61,
+   "pct": 12.01,
+   "volume": "10.16M",
+   "vol_vs_avg": "16% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -3.96
   },
   {
    "ticker": "NVDL",
    "underlying": "NVDA",
    "leverage": "2x bull",
-   "price": 33.82,
-   "pct": 3.55,
-   "volume": "472K",
+   "price": 32.73,
+   "pct": -4.58,
+   "volume": "514K",
    "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 1.79
+   "underlying_pct": -2.31
   },
   {
    "ticker": "UPRO",
    "underlying": "S&P 500",
    "leverage": "3x bull",
-   "price": 150.72,
-   "pct": 0.76,
-   "volume": "82K",
-   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 0.32
+   "price": 147.89,
+   "pct": -2.71,
+   "volume": "174K",
+   "vol_vs_avg": "9% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -0.92
   },
   {
    "ticker": "SPXU",
    "underlying": "S&P 500",
    "leverage": "3x bear",
-   "price": 33.88,
-   "pct": -0.67,
-   "volume": "305K",
-   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 0.32
+   "price": 34.51,
+   "pct": 2.74,
+   "volume": "269K",
+   "vol_vs_avg": "3% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -0.92
   },
   {
    "ticker": "SPXL",
    "underlying": "S&P 500",
    "leverage": "3x bull",
-   "price": 288.18,
-   "pct": 0.67,
-   "volume": "61K",
-   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 0.32
+   "price": 282.76,
+   "pct": -2.79,
+   "volume": "141K",
+   "vol_vs_avg": "9% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -0.92
   },
   {
    "ticker": "TNA",
    "underlying": "Russell 2000",
    "leverage": "3x bull",
-   "price": 56.26,
-   "pct": 0.86,
-   "volume": "210K",
-   "vol_vs_avg": "5% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 0.38
+   "price": 55.22,
+   "pct": -1.78,
+   "volume": "233K",
+   "vol_vs_avg": "6% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -0.55
   },
   {
    "ticker": "TZA",
    "underlying": "Russell 2000",
    "leverage": "3x bear",
-   "price": 48.13,
-   "pct": -0.95,
-   "volume": "245K",
-   "vol_vs_avg": "6% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 0.38
+   "price": 49.0,
+   "pct": 1.62,
+   "volume": "190K",
+   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -0.55
   },
   {
    "ticker": "LABU",
    "underlying": "S&P Biotech (XBI)",
    "leverage": "3x bull",
-   "price": 236.6,
-   "pct": 0.26,
-   "volume": "150",
-   "vol_vs_avg": "<1% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 0.01
+   "price": 231.01,
+   "pct": -1.35,
+   "volume": "9K",
+   "vol_vs_avg": "2% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -0.35
   },
   {
    "ticker": "FNGU",
    "underlying": "NYSE FANG+",
    "leverage": "3x bull",
-   "price": 31.62,
-   "pct": -0.66,
-   "volume": "55K",
+   "price": 30.88,
+   "pct": -4.54,
+   "volume": "65K",
    "vol_vs_avg": "2% of 3-mo avg daily vol (pre-mkt only)",
    "underlying_pct": null
   },
@@ -786,243 +797,264 @@
    "ticker": "CONL",
    "underlying": "COIN",
    "leverage": "2x bull",
-   "price": 4.84,
-   "pct": 3.44,
-   "volume": "765K",
-   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 1.67
+   "price": 4.57,
+   "pct": -8.96,
+   "volume": "1.64M",
+   "vol_vs_avg": "8% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -4.61
   },
   {
    "ticker": "MSTX",
    "underlying": "MSTR",
    "leverage": "2x bull",
-   "price": 16.0,
-   "pct": 5.4,
-   "volume": "355K",
-   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
-   "underlying_pct": 2.6
+   "price": 15.55,
+   "pct": -10.84,
+   "volume": "662K",
+   "vol_vs_avg": "8% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -5.47
   }
  ],
  "leveraged_drivers": [
   {
    "group": "TQQQ / SQQQ",
-   "text": "Nasdaq-100 futures +0.7% as SpaceX and Super Micro results revive the AI trade; Meta reports after the close."
+   "text": "Nasdaq-100 futures −1.6% as Meta and Tesla results revive AI-spending doubts; SQQQ volume now exceeds TQQQ."
   },
   {
    "group": "TSLL / TSLQ",
-   "text": "TSLA +1.3% on SpaceX–Tesla merger-committee news ahead of tonight's earnings."
+   "text": "TSLA −3.5% after Q3: beat on EPS/revenue but 2026 capex cut to ~$20B; TSLL is the second-heaviest-traded ETF on the list (7.3M)."
   },
   {
    "group": "SOXL / SOXS",
-   "text": "SOXX +1.6% after the SOX's eight-session losing streak; Micron +2.9%, SK hynix ADR +3.4%, Amkor +8.0%. SOXL/SOXS are the heaviest-traded ETFs on the list (~7–8M shares each)."
+   "text": "SOXX −4.0%: Lam −9% after results, AMAT/KLAC/INTC/MRVL −5%, MU −3.7%. SOXL/SOXS are the heaviest-traded ETFs on the list (~14.5M and ~10.2M shares)."
   },
   {
    "group": "NVDL",
-   "text": "NVDA +1.8% with the chip rebound and Nvidia DSX POD/packaging announcements."
+   "text": "NVDA −2.3% with the AI/chip selloff."
   },
   {
    "group": "UPRO / SPXU / SPXL",
-   "text": "S&P 500 futures +0.3% after Tuesday's +0.3% cash close; earnings mixed (COF, ELV up; NFLX, ABT, T down)."
+   "text": "S&P 500 futures −0.9% after Wednesday’s +0.6% cash close; oil spike and AI doubts weigh."
   },
   {
    "group": "TNA / TZA",
-   "text": "Russell 2000 futures +0.4% after Tuesday's +1.7% cash gain; IWM +0.3% pre-market."
+   "text": "Russell 2000 futures −0.6%; IWM −0.6% pre-market."
   },
   {
    "group": "LABU",
-   "text": "XBI flat pre-market; Roivant +9.3% on Phase 3 uveitis data."
+   "text": "XBI −0.4% pre-market; thin LABU trade (8.5K shares)."
   },
   {
    "group": "FNGU",
-   "text": "FANG+ has no pre-market index quote; members mixed (NVDA +1.8%, TSLA +1.3%, NFLX −6.8%, META −0.5%, GOOGL −1.0%)."
+   "text": "FANG+ has no pre-market index quote; members lower (TSLA −3.5%, META −2.3%, NVDA −2.3%, AMZN −1.9%, GOOGL −1.7%)."
   },
   {
    "group": "CONL / MSTX",
-   "text": "Bitcoin ~$83.4K (+2.4% 24h); COIN +1.7%, MSTR +2.6%."
+   "text": "Bitcoin ~$81.7K (−2.0% 24h); COIN −4.6%, MSTR −5.5%."
   }
  ],
- "leveraged_note": "ETF pre-market prices and volumes from StockAnalysis ~7:50 a.m. CT. Volume is shown against Yahoo's 3-month average daily volume because a 30-day average was not retrieved. Underlying proxies: NQ, ES and RTY futures (Yahoo), TSLA, SOXX, NVDA, XBI, COIN and MSTR pre-market (StockAnalysis). FANG+ has no pre-market quote.",
+ "leveraged_note": "ETF pre-market prices and volumes from StockAnalysis ~7:55 a.m. CT. Volume is shown against Yahoo's 3-month average daily volume because a 30-day average was not retrieved. Underlying proxies: NQ, ES and RTY futures (Yahoo), TSLA, SOXX, NVDA, XBI, COIN and MSTR pre-market (StockAnalysis). FANG+ has no pre-market quote.",
  "unusual": [
   {
-   "ticker": "AHT",
-   "relvol": 437.0,
-   "pct": 40.78,
-   "reason": "11.4M pre-market shares vs ~26K 3-mo avg; fee-waiver/buyback news, ATM offering ended"
+   "ticker": "SHFS",
+   "relvol": 12.33,
+   "pct": 47.86,
+   "reason": "163.5M pre-market shares vs ~13.3M 3-mo avg; no news, ~$158K market cap"
   },
   {
    "ticker": "RBNE",
-   "relvol": 420.6,
-   "pct": 161.44,
-   "reason": "44.6M pre-market shares vs ~106K avg; no news; flagged pump pattern"
+   "relvol": 23.9,
+   "pct": -21.47,
+   "reason": "56.1M pre-market shares vs ~2.3M 3-mo avg; unwinding Tuesday spike, no news"
   },
   {
-   "ticker": "SHFS",
-   "relvol": 52.0,
-   "pct": 74.31,
-   "reason": "240M pre-market shares vs ~4.6M avg; Nasdaq compliance extension"
+   "ticker": "CJMB",
+   "relvol": 37.71,
+   "pct": 42.66,
+   "reason": "46.5M pre-market shares vs ~1.2M 3-mo avg; facility groundbreaking PR"
   },
   {
-   "ticker": "WHLR",
-   "relvol": 19.1,
-   "pct": 24.66,
-   "reason": "52.1M pre-market shares vs ~2.7M avg; no news"
+   "ticker": "STAK",
+   "relvol": 8.3,
+   "pct": 58.0,
+   "reason": "28.4M pre-market shares vs ~3.4M 3-mo avg; FY2026 results"
   },
   {
-   "ticker": "OLOX",
-   "relvol": 15.6,
-   "pct": 58.75,
-   "reason": "64.6M pre-market shares vs ~4.2M avg; no news"
+   "ticker": "BHVN",
+   "relvol": 4.11,
+   "pct": 32.17,
+   "reason": "10.7M pre-market shares vs ~2.6M 3-mo avg; FDA accepted drug filing (cap ~$1.8B)"
   }
  ],
- "unusual_options": "n/a (no options-flow source available). Among ≥$2B names, none is near 3× its 3-month average day pre-market; the highest are DHR (0.22×), SPCX (0.13×) and NFLX (0.12×).",
+ "unusual_options": "n/a (no options-flow source available). Among ≥$2B names, none is near 3× its 3-month average day pre-market; the highest are TTMI (0.15×), NOK (0.14×) and SPOT (0.09×).",
  "earnings": {
   "before_open": [
    {
-    "ticker": "PM",
-    "company": "Philip Morris",
-    "estimate": "$2.30",
-    "reaction": "−2.8% pre-market",
-    "note": "Revenue beat; profit fell on cost pressures"
+    "ticker": "LMT",
+    "company": "Lockheed Martin",
+    "estimate": "$7.52",
+    "reaction": "+4.6% pre-market",
+    "note": "EPS $7.97, revenue $20.7B beat; 2026 EPS guide raised; record backlog"
    },
    {
-    "ticker": "TMO",
-    "company": "Thermo Fisher",
-    "estimate": "$6.40",
-    "reaction": "−2.5% pre-market",
-    "note": "Adj. EPS $6.68 and revenue $12.4B beat"
+    "ticker": "SPOT",
+    "company": "Spotify",
+    "estimate": "n/a",
+    "reaction": "+7.6% pre-market",
+    "note": "Revenue €4.97B vs €4.98B est.; Q4 op. income guide €820M vs €813M est."
    },
    {
-    "ticker": "ABT",
-    "company": "Abbott Laboratories",
-    "estimate": "$1.43",
-    "reaction": "−4.1% pre-market",
-    "note": "Revenue beat; plans to spin off nutrition business; 2026 outlook updated"
+    "ticker": "DOW",
+    "company": "Dow Inc.",
+    "estimate": "$0.64",
+    "reaction": "+4.4% pre-market",
+    "note": "Operating EPS $0.71; revenue $11.27B beat"
    },
    {
-    "ticker": "NEE",
-    "company": "NextEra Energy",
-    "estimate": "$1.20",
-    "reaction": "+0.7% pre-market",
-    "note": "Q3 adjusted earnings and revenue rose"
+    "ticker": "CMCSA",
+    "company": "Comcast",
+    "estimate": "n/a",
+    "reaction": "+3.0% pre-market",
+    "note": "Q3 earnings topped estimates; broadband losses"
    },
    {
-    "ticker": "T",
-    "company": "AT&T",
-    "estimate": "$0.61",
-    "reaction": "−5.0% pre-market",
-    "note": "Adj. EPS $0.65, revenue $32.3B; 2026 EPS guide raised to ~$2.40; wireless adds soft"
-   },
-   {
-    "ticker": "DHR",
-    "company": "Danaher",
-    "estimate": "$1.92",
-    "reaction": "−3.0% pre-market",
-    "note": "Q3 beat estimates"
-   },
-   {
-    "ticker": "CME",
-    "company": "CME Group",
-    "estimate": "$2.98",
-    "reaction": "−0.6% pre-market",
-    "note": "Q3 earnings and revenue beat"
-   },
-   {
-    "ticker": "ELV",
-    "company": "Elevance Health",
-    "estimate": "$4.66",
-    "reaction": "+1.3% pre-market",
-    "note": "Adj. EPS $6.99, revenue $50.4B beat; 2026 EPS floor raised to ≥$29"
-   },
-   {
-    "ticker": "MCO",
-    "company": "Moody's",
-    "estimate": "$4.25",
-    "reaction": "−3.2% pre-market",
-    "note": "Q3 revenue missed estimates"
-   },
-   {
-    "ticker": "WAB",
-    "company": "Wabtec",
-    "estimate": "$2.72",
-    "reaction": "−2.5% pre-market (thin)",
-    "note": "Adj. EPS $2.83 beat; revenue $3.12B missed; 2026 EPS guide raised to $10.85–11.05"
-   },
-   {
-    "ticker": "NTRS",
-    "company": "Northern Trust",
-    "estimate": "$2.86",
-    "reaction": "+0.3% pre-market",
-    "note": "Q3 earnings and revenue beat"
-   },
-   {
-    "ticker": "TDY",
-    "company": "Teledyne",
-    "estimate": "$6.15",
-    "reaction": "−0.5% pre-market",
-    "note": "Q3 earnings and sales beat"
-   },
-   {
-    "ticker": "LAD",
-    "company": "Lithia Motors",
-    "estimate": "$9.70",
-    "reaction": "+6.5% pre-market (thin)",
-    "note": "Q3 earnings and revenue beat; dividend raised"
-   }
-  ],
-  "after_close": [
-   {
-    "ticker": "META",
-    "company": "Meta Platforms",
-    "estimate": "$4.98",
-    "reaction": "n/a",
-    "note": ""
-   },
-   {
-    "ticker": "TSLA",
-    "company": "Tesla",
-    "estimate": "$0.22",
-    "reaction": "n/a",
-    "note": "Up 1.3% pre-market on SpaceX merger-committee news"
-   },
-   {
-    "ticker": "LRCX",
-    "company": "Lam Research",
-    "estimate": "$2.17",
-    "reaction": "n/a",
-    "note": ""
-   },
-   {
-    "ticker": "SAP",
-    "company": "SAP",
-    "estimate": "$2.03",
-    "reaction": "n/a",
-    "note": ""
-   },
-   {
-    "ticker": "TXN",
-    "company": "Texas Instruments",
-    "estimate": "$2.40",
-    "reaction": "n/a",
-    "note": ""
-   },
-   {
-    "ticker": "IBM",
-    "company": "IBM",
-    "estimate": "$2.88",
-    "reaction": "n/a",
-    "note": ""
+    "ticker": "PG",
+    "company": "Procter & Gamble",
+    "estimate": "n/a",
+    "reaction": "+2.5% pre-market",
+    "note": "Beat estimates; price hikes not yet hurting demand"
    },
    {
     "ticker": "CSX",
     "company": "CSX",
-    "estimate": "$0.52",
+    "estimate": "$0.53",
+    "reaction": "+3.4% pre-market (thin)",
+    "note": "Adj. EPS $0.44 missed; revenue $4.02B beat"
+   },
+   {
+    "ticker": "TTMI",
+    "company": "TTM Technologies",
+    "estimate": "n/a",
+    "reaction": "−12.9% pre-market",
+    "note": "Q3 beat; initial FY2027 outlook"
+   },
+   {
+    "ticker": "TSCO",
+    "company": "Tractor Supply",
+    "estimate": "n/a",
+    "reaction": "−6.7% pre-market",
+    "note": "Sales beat, earnings declined; FY outlook reaffirmed"
+   },
+   {
+    "ticker": "NOK",
+    "company": "Nokia",
+    "estimate": "n/a",
+    "reaction": "−6.4% pre-market",
+    "note": "Comparable earnings and sales rose; Q4 outlook issued"
+   },
+   {
+    "ticker": "AAL",
+    "company": "American Airlines",
+    "estimate": "n/a",
+    "reaction": "−4.2% pre-market",
+    "note": "Q3 loss widened, revenue beat; 2026 forecast trimmed on fuel"
+   },
+   {
+    "ticker": "BX",
+    "company": "Blackstone",
+    "estimate": "n/a",
+    "reaction": "−3.3% pre-market",
+    "note": "Quarterly earnings fell (Reuters)"
+   },
+   {
+    "ticker": "SNA",
+    "company": "Snap-on",
+    "estimate": "n/a",
+    "reaction": "−8.2% pre-market (thin)",
+    "note": "Q3 revenue missed"
+   },
+   {
+    "ticker": "CRS",
+    "company": "Carpenter Technology",
+    "estimate": "n/a",
+    "reaction": "−9.0% pre-market (thin)",
+    "note": "FQ1 earnings and revenue rose"
+   },
+   {
+    "ticker": "ALLE",
+    "company": "Allegion",
+    "estimate": "n/a",
+    "reaction": "+5.7% pre-market (thin)",
+    "note": "Q3 beat; 2026 outlook raised"
+   },
+   {
+    "ticker": "UNP",
+    "company": "Union Pacific",
+    "estimate": "n/a",
+    "reaction": "−2.7% pre-market",
+    "note": ""
+   },
+   {
+    "ticker": "HON",
+    "company": "Honeywell",
+    "estimate": "n/a",
+    "reaction": "−0.3% pre-market",
+    "note": ""
+   }
+  ],
+  "after_close": [
+   {
+    "ticker": "WDC",
+    "company": "Western Digital",
+    "estimate": "n/a",
+    "reaction": "n/a",
+    "note": "−3.5% pre-market with chip selloff"
+   },
+   {
+    "ticker": "NEM",
+    "company": "Newmont",
+    "estimate": "n/a",
+    "reaction": "n/a",
+    "note": "−3.1% pre-market; gold −1.4%"
+   },
+   {
+    "ticker": "BE",
+    "company": "Bloom Energy",
+    "estimate": "n/a",
+    "reaction": "n/a",
+    "note": "−4.9% pre-market"
+   },
+   {
+    "ticker": "DECK",
+    "company": "Deckers Outdoor",
+    "estimate": "n/a",
     "reaction": "n/a",
     "note": ""
    },
    {
-    "ticker": "KMI",
-    "company": "Kinder Morgan",
-    "estimate": "$0.33",
+    "ticker": "VRSN",
+    "company": "VeriSign",
+    "estimate": "n/a",
+    "reaction": "n/a",
+    "note": ""
+   },
+   {
+    "ticker": "SSNC",
+    "company": "SS&C Technologies",
+    "estimate": "n/a",
+    "reaction": "n/a",
+    "note": ""
+   },
+   {
+    "ticker": "MXL",
+    "company": "MaxLinear",
+    "estimate": "n/a",
+    "reaction": "n/a",
+    "note": "−6.1% pre-market"
+   },
+   {
+    "ticker": "SAM",
+    "company": "Boston Beer",
+    "estimate": "n/a",
     "reaction": "n/a",
     "note": ""
    }
@@ -1039,129 +1071,128 @@
   ],
   "items": [
    {
-    "ticker": "SMCI",
-    "company": "Super Micro Computer",
-    "direction": "up",
-    "prior_close": 32.47,
-    "premarket_price": 36.54,
-    "gap_pct": 12.53,
-    "relvol": 0.095,
-    "catalyst": "Raised preliminary fiscal Q1 revenue to $18.5–19.5B from $14.5–15.5B",
-    "risk": "Figures are preliminary and unaudited until Nov 3 results"
+    "ticker": "TTMI",
+    "company": "TTM Technologies",
+    "direction": "down",
+    "prior_close": 102.15,
+    "premarket_price": 89.0,
+    "gap_pct": -12.87,
+    "relvol": 0.153,
+    "catalyst": "Q3 earnings/revenue beat; initial FY2027 outlook",
+    "risk": "Falling despite a beat; gap well beyond sector move"
    },
    {
-    "ticker": "ROIV",
-    "company": "Roivant Sciences",
-    "direction": "up",
-    "prior_close": 34.92,
-    "premarket_price": 38.17,
-    "gap_pct": 9.31,
-    "relvol": 0.027,
-    "catalyst": "Brepocitinib met primary endpoints in two Phase 3 uveitis trials",
-    "risk": "Regulatory filing and approval still ahead"
+    "ticker": "LRCX",
+    "company": "Lam Research",
+    "direction": "down",
+    "prior_close": 260.81,
+    "premarket_price": 236.48,
+    "gap_pct": -9.33,
+    "relvol": 0.049,
+    "catalyst": "FQ1 results (record $8.22B revenue) and Q2 guidance; Needham cut PT to $290 from $390",
+    "risk": "Chip equipment selling broadly (AMAT −5%, KLAC −5%)"
    },
    {
-    "ticker": "SPCX",
-    "company": "SpaceX",
+    "ticker": "SPOT",
+    "company": "Spotify Technology",
     "direction": "up",
-    "prior_close": 147.79,
-    "premarket_price": 160.02,
-    "gap_pct": 8.28,
-    "relvol": 0.132,
-    "catalyst": "Q3 revenue $14.6B and EPS $0.37 beat; Tesla merger committees formed",
-    "risk": "Merger is exploratory with no terms; Q4 capex guided at $35–40B"
+    "prior_close": 525.34,
+    "premarket_price": 565.5,
+    "gap_pct": 7.64,
+    "relvol": 0.088,
+    "catalyst": "Q3 earnings: premium subscriber growth; Q4 operating-income guide slightly above est.",
+    "risk": "Q3 revenue slightly below estimate (€4.97B vs €4.98B)"
    },
    {
-    "ticker": "AMKR",
-    "company": "Amkor Technology",
+    "ticker": "IBM",
+    "company": "IBM",
+    "direction": "down",
+    "prior_close": 251.46,
+    "premarket_price": 233.0,
+    "gap_pct": -7.34,
+    "relvol": 0.068,
+    "catalyst": "Q3 beat; FY outlook maintained; Morgan Stanley PT $240",
+    "risk": "Consulting flat"
+   },
+   {
+    "ticker": "TSCO",
+    "company": "Tractor Supply",
+    "direction": "down",
+    "prior_close": 32.69,
+    "premarket_price": 30.5,
+    "gap_pct": -6.7,
+    "relvol": 0.009,
+    "catalyst": "Q3 earnings declined though sales beat; FY26 outlook reaffirmed",
+    "risk": "Pre-market volume just over 100K"
+   },
+   {
+    "ticker": "NOK",
+    "company": "Nokia (ADR)",
+    "direction": "down",
+    "prior_close": 9.25,
+    "premarket_price": 8.66,
+    "gap_pct": -6.38,
+    "relvol": 0.137,
+    "catalyst": "Q3 results and Q4 sales-growth outlook",
+    "risk": "Also caught in the telecom/optical AI selloff"
+   },
+   {
+    "ticker": "DOW",
+    "company": "Dow Inc.",
     "direction": "up",
-    "prior_close": 41.7,
-    "premarket_price": 45.04,
-    "gap_pct": 8.01,
-    "relvol": 0.059,
-    "catalyst": "Expanded Nvidia advanced-packaging partnership",
+    "prior_close": 30.38,
+    "premarket_price": 31.72,
+    "gap_pct": 4.41,
+    "relvol": 0.012,
+    "catalyst": "Q3 operating EPS $0.71 vs $0.64 est.; revenue beat",
     "risk": ""
    },
    {
-    "ticker": "NFLX",
-    "company": "Netflix",
+    "ticker": "AAL",
+    "company": "American Airlines",
     "direction": "down",
-    "prior_close": 68.69,
-    "premarket_price": 64.03,
-    "gap_pct": -6.78,
-    "relvol": 0.118,
-    "catalyst": "Q4 guidance below estimates; 2026 ad-revenue outlook cut",
-    "risk": ""
+    "prior_close": 12.235,
+    "premarket_price": 11.72,
+    "gap_pct": -4.21,
+    "relvol": 0.041,
+    "catalyst": "Q3 loss; trimmed 2026 forecast on jet-fuel costs",
+    "risk": "Oil up ~2% this morning"
    },
    {
-    "ticker": "T",
-    "company": "AT&T",
+    "ticker": "TSLA",
+    "company": "Tesla",
     "direction": "down",
-    "prior_close": 23.42,
-    "premarket_price": 22.25,
-    "gap_pct": -5.0,
-    "relvol": 0.073,
-    "catalyst": "Q3 beat and guidance raise overshadowed by soft wireless adds",
-    "risk": "Sector-wide telecom weakness on SpaceX competition worries"
+    "prior_close": 386.47,
+    "premarket_price": 373.06,
+    "gap_pct": -3.47,
+    "relvol": 0.056,
+    "catalyst": "Q3 beat on EPS/revenue; 2026 capex cut to ~$20B from >$25B",
+    "risk": "Musk SpaceX-merger comments drawing scrutiny (Reuters)"
    },
    {
-    "ticker": "APLD",
-    "company": "Applied Digital",
+    "ticker": "CMCSA",
+    "company": "Comcast",
     "direction": "up",
-    "prior_close": 19.33,
-    "premarket_price": 20.21,
-    "gap_pct": 4.55,
-    "relvol": 0.023,
-    "catalyst": "Texas AI data-center partnership with Soluna plus a bullish analyst call",
-    "risk": ""
-   },
-   {
-    "ticker": "PEGA",
-    "company": "Pegasystems",
-    "direction": "down",
-    "prior_close": 36.23,
-    "premarket_price": 34.66,
-    "gap_pct": -4.33,
-    "relvol": 0.046,
-    "catalyst": "Q3 EPS and revenue missed estimates",
-    "risk": "Pre-market volume just above the 100K floor"
-   },
-   {
-    "ticker": "ABT",
-    "company": "Abbott Laboratories",
-    "direction": "down",
-    "prior_close": 102.45,
-    "premarket_price": 98.25,
-    "gap_pct": -4.1,
-    "relvol": 0.081,
-    "catalyst": "Q3 results plus planned nutrition-business spinoff",
-    "risk": ""
-   },
-   {
-    "ticker": "MBLY",
-    "company": "Mobileye",
-    "direction": "down",
-    "prior_close": 7.3,
-    "premarket_price": 7.01,
-    "gap_pct": -3.97,
-    "relvol": 0.019,
-    "catalyst": "RBC downgrade to Underperform, target $5 from $7",
-    "risk": "Pre-market volume just above the 100K floor"
+    "prior_close": 22.08,
+    "premarket_price": 22.75,
+    "gap_pct": 3.03,
+    "relvol": 0.033,
+    "catalyst": "Q3 earnings topped estimates",
+    "risk": "Broadband subscriber losses continue; Yahoo shows +2.7–3.9%"
    }
   ],
-  "excluded": "No company-specific catalyst (sector sympathy or no news): DELL (+6.7%, 269K; Super Micro peer), CRDO (+6.4%, 143K), VRT (+6.1%, 138K; Nvidia DSX POD ecosystem news), LITE (+5.2%, 108K), WULF (+4.8%, 354K; CEO commentary), HPE (+4.6%, 181K; Super Micro peer), BE (+4.5%, 392K), COHR (+4.3%, 100K), IREN (+4.1%, 2.15M), SKHY (+3.4%, 1.01M), NOK (+3.1%, 4.63M; partnership headlines only), XPEV (−4.2%, 354K). Dilution: AAOI (+4.8%, 340K; recent equity raise, no new catalyst). Under 100K pre-market shares: LAD (+6.5%, 1K; Q3 beat), DOCN (+6.1%, 14K; Piper upgrade), ECHO (+4.8%, 25K; SpaceX holder), ZM (+4.1%, 50K), COF (+4.1%, 12K; Q3 beat), ISRG (−6.6%, 85K; Q3 legal charge), MCO (−3.2%, 85K; revenue miss), KALU (+9.7%, 3K; no news). Below 3% gap: DHR (−2.98% StockAnalysis / −3.42% Yahoo; Q3 results), FTNT (−2.8%; Arete double downgrade). Below $2B: TKNO (−31.4%; $40M offering), AVEX (−25.3%; Navy program halt).",
+  "excluded": "No company-specific catalyst (sector/AI or crypto selloff, or no news): HSAI (−10.1%, 151K), INTC (−5.1%, 3.3M), AAOI (−5.7%, 425K), MSTR (−5.5%, 1.1M), COHR (−5.5%, 105K), AMAT (−5.5%, 121K), LITE (−5.4%, 113K), BMNR (−5.3%, 1.1M), KLAC (−5.2%, 383K), MRVL (−5.2%, 322K), SNDK (−5.0%, 253K), DELL (−5.0%, 113K), BE (−4.9%, 557K), AMD (−4.5%, 477K), SPCX (−3.1%, 13.5M). FPS (−11.9%, 477K): CFO change is not a listed catalyst type. Under 100K pre-market shares: LMT, RTO, SSL, ALLE, CSX, BX and thin names in notes. No dilution, reverse-split or OTC cases among ≥$2B names.",
   "empty_reason": "",
   "price_label": "Pre-market",
   "move_label": "Gap",
-  "subtitle": "Built pre-market (~7:50 a.m. CT) from live pre-market quotes vs Tuesday's close."
+  "subtitle": "Built pre-market (~7:55 a.m. CT) from live pre-market quotes vs Wednesday's close."
  },
  "sources": [
-  "Yahoo Finance screener, v7 quotes and ticker news search via the Mac browser (~7:33–7:50 a.m. CT)",
-  "StockAnalysis.com pre-market gainers/losers pages and per-ticker pre-market quote API (~7:50 a.m. CT)",
-  "Nasdaq.com earnings calendar API for Oct 21 via the Mac browser",
-  "Reuters via Investing.com 'Nasdaq futures lead gains as SpaceX, Super Micro results lift AI trade' (6:34 a.m. CT); Investing.com 'Premarket movers: Super Micro, SCHMID Group and SpaceX surge'",
-  "Benzinga pre-market movers (Oct 21, ~7:00 a.m. CT); Yahoo Finance live blog (Oct 21)",
-  "Investrade 'Morning Preview: October 21, 2026' (economic calendar, earnings results); Current Logic 'Morning Brief Oct 21, 2026'",
-  "Headlines via Yahoo news search: Reuters, Bloomberg, MT Newswires, Investing.com, StockStory, Zacks, Benzinga, IBD"
+  "Yahoo Finance screener, v7 quotes and ticker news search via the Mac browser (~7:40–7:55 a.m. CT)",
+  "StockAnalysis.com pre-market movers pages and per-ticker pre-market quote API (~7:55 a.m. CT)",
+  "Reuters via Yahoo Finance 'Nasdaq futures sink as AI doubts resurface, oil jumps' (6:39 a.m. CT)",
+  "Investrade 'Morning Preview: October 22, 2026' (futures, economic calendar, earnings lists and results)",
+  "TradingKey US pre-market (Oct 22): LMT, TSLA, IBM, LRCX",
+  "Headlines via Yahoo news search: WSJ, Barron's, MT Newswires, Investing.com, StockStory, Zacks, AP, GlobeNewswire, Business Wire"
  ]
 }
