@@ -1,0 +1,998 @@
+{
+ "date": "2026-10-26",
+ "weekday": "Monday",
+ "session": "PRE-MARKET",
+ "generated_at": "2026-10-26T08:05:00-05:00",
+ "data_as_of": "Futures, VIX, 10Y, DXY, oil, gold, BTC and overseas indexes: Yahoo v7 quotes ~7:40-7:50 a.m. CT. Stock and ETF pre-market prices/volumes: StockAnalysis quote API (~7:50 a.m. CT, quotes stamped 8:28-8:51 a.m. ET) cross-checked with Yahoo pre-market quotes and StockAnalysis pre-market movers pages dated Oct 26. Cash closes are Friday Oct 23.",
+ "headline": "Brazil ADRs crash 20–50% after Lula's surprise re-election (EWZ −28%) while US futures edge higher; EQT agrees to buy Range Resources in an all-stock deal ahead of a week with the FOMC and Microsoft/Alphabet/Amazon earnings.",
+ "notes": [
+  "Scheduled run ~7:49 a.m. CT, before the 8:30 a.m. CT open: PRE-MARKET. All movers use live pre-market data dated Oct 26 (Yahoo and StockAnalysis via the Mac browser); StockAnalysis movers pages checked as dated Oct 26, 2026.",
+  "Quality movers screened from Yahoo's US list of stocks ≥$5 and ≥$2B (top 3,000 by market cap; 831 had an Oct 26 pre-market quote ≥$5), plus StoneCo, PagSeguro and Surgery Partners added from StockAnalysis's movers pages. Pre-market price ≥$5 used for the $5 filter, so BBD, SBS, INTR, ABEV, BSBR (all below $5 pre-market) appear in the under-$5 tables instead. Names with <10K pre-market shares left out.",
+  "PBR.A (−22.4%, 1.88M sh) left out of the losers table as a duplicate share class of PBR; MELI added instead. ELPC (−20.1%) left out on 9K shares.",
+  "Brazil sell-off dominates the losers list: Lula won a fourth term (≈51.8%–48.2%) over Flávio Bolsonaro, a surprise; Bolsonaro says he will seek to annul the result. Non-Brazil losers below the top 10: FICO (−9.6% on 7K sh; Wells Fargo downgrade), MRNA (−7.0%), EQT (−6.4%).",
+  "Gap watchlist applied strictly. Passing: SGRY, RRC, MRNA, EQT. Brazil ADRs gapped far more but the catalyst (an election) is not one of the listed catalyst types, so they are excluded (same treatment as last week's macro/competition moves). XNCR (+34%, ESMO kidney-cancer data) fails the $2B market-cap test ($1.87B).",
+  "SGRY catalyst is an FT report of late-stage take-private talks (~$20/share, ~$6B incl. debt); Investing.com describes it as an agreement — treat as reported, not confirmed by the company.",
+  "MRNA: Investing.com attributes the drop to Phase 3 melanoma data for intismeran (42% risk reduction vs 49% in Phase 2b); ZeroHedge says pancreatic-cancer vaccine results. Investing.com's specific version used.",
+  "META: ZeroHedge (8:15 a.m. ET) had META +2.4% on a $95B equity-raise plan, but live quotes at ~8:50 a.m. ET show −0.6% to −0.7% (Yahoo/StockAnalysis) on very heavy volume ($1.37B traded). Live quotes used.",
+  "AXG excluded: StockAnalysis shows −99.5% vs a $10.84 prior close while Yahoo's prior close is $0.054 (−7.8%) — reverse-split/price artifact.",
+  "Nasdaq-100 Friday cash close from Yahoo (^NDX 28,957.53, ≈0.0%) is consistent with QQQ's −0.01% close.",
+  "Relative volume = pre-market volume ÷ 3-month average full-day volume (Yahoo), so values are naturally small before the open.",
+  "Leveraged ETF volume is pre-market volume vs the 3-month average daily volume (Yahoo) because a 30-day average was not retrieved. FANG+ index has no pre-market quote (null).",
+  "Under-$5 lists come from StockAnalysis's top-20 pre-market pages plus Brazil names checked directly; float n/a (Yahoo shares outstanding used where noted).",
+  "Unusual options activity: no options-flow source available.",
+  "After-close earnings list from ZeroHedge's calendar and Yahoo; NUE and PSA named by Yahoo as reporting today (timing not confirmed).",
+  "No git commands were run; the Mac publish agent handles commit and push."
+ ],
+ "snapshot": [
+  {
+   "name": "S&P 500 futures",
+   "level": "7,680.75",
+   "change": "+21.00",
+   "pct": 0.27
+  },
+  {
+   "name": "Nasdaq-100 futures",
+   "level": "29,266.75",
+   "change": "+149.00",
+   "pct": 0.51
+  },
+  {
+   "name": "Dow futures",
+   "level": "52,567",
+   "change": "+173",
+   "pct": 0.33
+  },
+  {
+   "name": "Russell 2000 futures",
+   "level": "2,788.20",
+   "change": "+3.70",
+   "pct": 0.13
+  },
+  {
+   "name": "VIX",
+   "level": "19.11",
+   "change": "−0.34",
+   "pct": -1.75
+  },
+  {
+   "name": "10Y yield",
+   "level": "4.99%",
+   "change": "+0.00 pt",
+   "pct": 0.04
+  },
+  {
+   "name": "DXY",
+   "level": "101.87",
+   "change": "+0.06",
+   "pct": 0.06
+  },
+  {
+   "name": "WTI crude",
+   "level": "101.14",
+   "change": "−2.13",
+   "pct": -2.06
+  },
+  {
+   "name": "Gold",
+   "level": "4,034.40",
+   "change": "+26.50",
+   "pct": 0.66
+  },
+  {
+   "name": "Bitcoin",
+   "level": "80,265",
+   "change": "−83 (24h)",
+   "pct": -0.1
+  }
+ ],
+ "cash_close": [
+  {
+   "name": "S&P 500",
+   "level": "7,623.68",
+   "pct": -0.52
+  },
+  {
+   "name": "Nasdaq-100",
+   "level": "28,957.53",
+   "pct": 0.0
+  },
+  {
+   "name": "Dow",
+   "level": "52,215.16",
+   "pct": -1.23
+  },
+  {
+   "name": "Russell 2000",
+   "level": "2,775.90",
+   "pct": -0.29
+  }
+ ],
+ "drivers": "US futures are modestly higher (S&P 500 +0.3%, Nasdaq-100 +0.5%) after Friday's second straight weekly loss, helped by chips (SOXX +1.6%, MU +2.7%) and a 2% drop in oil (WTI ~$101) as Saudi, Turkish and Pakistani officials meet Iran in Tehran and Iran floats a plan to reopen the Strait of Hormuz; Trump says it is 'decision time' on a deal or strikes. The big shock is Brazil: Lula won a fourth term in a surprise runoff result, and Brazilian ADRs are collapsing — EWZ −28%, XP −51%, StoneCo −39%, Itaú −28%, Nubank −26%, Petrobras −22%, MercadoLibre −15% — with Santander −4% on its Brazil exposure. In deals, EQT agreed to buy Range Resources in an all-stock deal (0.987 EQT per RRC share, >$50B combined EV): RRC +11.5%, EQT −6.4%; an FT report says Bon Secours Mercy is near a ~$20/share take-private of Surgery Partners (+24%). Neoclouds are weak (CoreWeave −3.4%, IREN −2.4%) after Musk said debt markets have almost shut off funding for companies without revenue outside AI data centers; Meta is trading heavily around flat after announcing plans to raise up to $95B in equity for AI spending. The week is packed: FOMC decision Wednesday (hold expected under Chair Warsh, December hike largely priced), Microsoft and Alphabet Wednesday, Amazon, Q3 GDP and September PCE Thursday; the 10-year yield is near 4.99% and the VIX near 19.",
+ "calendar": [
+  {
+   "time": "Before open",
+   "event": "Earnings",
+   "detail": "VZ reported (raised FY EPS guide; revenue missed)"
+  },
+  {
+   "time": "7:30 a.m.",
+   "event": "Chicago Fed National Activity Index (Sep)",
+   "detail": "Est. −0.10; prior −0.04"
+  },
+  {
+   "time": "9:30 a.m.",
+   "event": "Dallas Fed Manufacturing (Oct)",
+   "detail": "Est. 8.8; prior 9.8"
+  },
+  {
+   "time": "10:30 a.m.",
+   "event": "13- and 26-week bill auctions",
+   "detail": ""
+  },
+  {
+   "time": "12:00 p.m.",
+   "event": "2-year note auction",
+   "detail": "$69B"
+  },
+  {
+   "time": "After close",
+   "event": "Earnings",
+   "detail": "CDNS, AMKR, RMBS, WELL, WHR, BRO, ARE; NUE and PSA also listed today (timing not confirmed)"
+  },
+  {
+   "time": "Oct 27–28",
+   "event": "FOMC meeting",
+   "detail": "Decision Wed Oct 28; Fed speakers today: none (quiet period)"
+  }
+ ],
+ "gainers": [
+  {
+   "ticker": "SGRY",
+   "company": "Surgery Partners",
+   "price": 19.5,
+   "pct": 23.81,
+   "volume": "115K",
+   "relvol": 0.051,
+   "catalyst": "FT: Bon Secours Mercy Health in late-stage talks to take it private at ~$20/share (~$6B incl. debt)"
+  },
+  {
+   "ticker": "RRC",
+   "company": "Range Resources",
+   "price": 50.77,
+   "pct": 11.53,
+   "volume": "280K",
+   "relvol": 0.108,
+   "catalyst": "EQT to acquire in all-stock deal, 0.987 EQT share per RRC share"
+  },
+  {
+   "ticker": "HSAI",
+   "company": "Hesai Group (ADR)",
+   "price": 13.71,
+   "pct": 4.42,
+   "volume": "134K",
+   "relvol": 0.085,
+   "catalyst": "No company news found"
+  },
+  {
+   "ticker": "SMTC",
+   "company": "Semtech",
+   "price": 136.93,
+   "pct": 3.73,
+   "volume": "33K",
+   "relvol": 0.01,
+   "catalyst": "No company news found; optical/semis bid"
+  },
+  {
+   "ticker": "COHR",
+   "company": "Coherent",
+   "price": 216.93,
+   "pct": 3.65,
+   "volume": "196K",
+   "relvol": 0.028,
+   "catalyst": "No company news found; optical names and SOXX higher"
+  },
+  {
+   "ticker": "NOK",
+   "company": "Nokia (ADR)",
+   "price": 8.43,
+   "pct": 3.56,
+   "volume": "3.96M",
+   "relvol": 0.05,
+   "catalyst": "No company news found"
+  },
+  {
+   "ticker": "TSEM",
+   "company": "Tower Semiconductor",
+   "price": 173.5,
+   "pct": 3.54,
+   "volume": "58K",
+   "relvol": 0.029,
+   "catalyst": "No company news found; semis higher"
+  },
+  {
+   "ticker": "LITE",
+   "company": "Lumentum",
+   "price": 782.54,
+   "pct": 3.49,
+   "volume": "165K",
+   "relvol": 0.034,
+   "catalyst": "No company news found; optical names higher"
+  },
+  {
+   "ticker": "CLS",
+   "company": "Celestica",
+   "price": 268.99,
+   "pct": 3.45,
+   "volume": "35K",
+   "relvol": 0.013,
+   "catalyst": "No company news found"
+  },
+  {
+   "ticker": "RDY",
+   "company": "Dr. Reddy's (ADR)",
+   "price": 13.665,
+   "pct": 3.44,
+   "volume": "43K",
+   "relvol": 0.015,
+   "catalyst": "No company news found"
+  }
+ ],
+ "losers": [
+  {
+   "ticker": "XP",
+   "company": "XP Inc.",
+   "price": 14.88,
+   "pct": -51.07,
+   "volume": "4.96M",
+   "relvol": 0.608,
+   "catalyst": "Brazil sell-off after Lula's surprise re-election"
+  },
+  {
+   "ticker": "STNE",
+   "company": "StoneCo",
+   "price": 7.0,
+   "pct": -39.02,
+   "volume": "4.04M",
+   "relvol": 0.694,
+   "catalyst": "Brazil election sell-off"
+  },
+  {
+   "ticker": "PAGS",
+   "company": "PagSeguro Digital",
+   "price": 7.59,
+   "pct": -33.65,
+   "volume": "877K",
+   "relvol": 0.255,
+   "catalyst": "Brazil election sell-off"
+  },
+  {
+   "ticker": "ITUB",
+   "company": "Itaú Unibanco (ADR)",
+   "price": 6.99,
+   "pct": -27.71,
+   "volume": "4.52M",
+   "relvol": 0.165,
+   "catalyst": "Brazil election sell-off"
+  },
+  {
+   "ticker": "NU",
+   "company": "Nu Holdings",
+   "price": 11.28,
+   "pct": -25.59,
+   "volume": "21.45M",
+   "relvol": 0.297,
+   "catalyst": "Brazil election sell-off"
+  },
+  {
+   "ticker": "PBR",
+   "company": "Petrobras (ADR)",
+   "price": 20.47,
+   "pct": -21.75,
+   "volume": "5.01M",
+   "relvol": 0.238,
+   "catalyst": "Brazil election sell-off (PBR.A −22.4%)"
+  },
+  {
+   "ticker": "UGP",
+   "company": "Ultrapar (ADR)",
+   "price": 6.2,
+   "pct": -19.9,
+   "volume": "138K",
+   "relvol": 0.037,
+   "catalyst": "Brazil election sell-off"
+  },
+  {
+   "ticker": "TIMB",
+   "company": "TIM S.A. (ADR)",
+   "price": 15.7,
+   "pct": -18.1,
+   "volume": "47K",
+   "relvol": 0.08,
+   "catalyst": "Brazil election sell-off"
+  },
+  {
+   "ticker": "VIV",
+   "company": "Telefônica Brasil (ADR)",
+   "price": 10.75,
+   "pct": -17.05,
+   "volume": "112K",
+   "relvol": 0.074,
+   "catalyst": "Brazil election sell-off"
+  },
+  {
+   "ticker": "MELI",
+   "company": "MercadoLibre",
+   "price": 1543.08,
+   "pct": -14.75,
+   "volume": "142K",
+   "relvol": 0.277,
+   "catalyst": "Brazil election sell-off (largest market is Brazil)"
+  }
+ ],
+ "active_shares": [
+  {
+   "ticker": "NU",
+   "price": 11.28,
+   "pct": -25.59,
+   "volume": "21.45M",
+   "relvol": 0.297
+  },
+  {
+   "ticker": "PBR",
+   "price": 20.47,
+   "pct": -21.75,
+   "volume": "5.01M",
+   "relvol": 0.238
+  },
+  {
+   "ticker": "XP",
+   "price": 14.88,
+   "pct": -51.07,
+   "volume": "4.96M",
+   "relvol": 0.608
+  },
+  {
+   "ticker": "CRWV",
+   "price": 52.4,
+   "pct": -3.38,
+   "volume": "4.83M",
+   "relvol": 0.132
+  },
+  {
+   "ticker": "ITUB",
+   "price": 6.99,
+   "pct": -27.71,
+   "volume": "4.52M",
+   "relvol": 0.165
+  },
+  {
+   "ticker": "STNE",
+   "price": 7.0,
+   "pct": -39.02,
+   "volume": "4.04M",
+   "relvol": 0.694
+  },
+  {
+   "ticker": "NOK",
+   "price": 8.43,
+   "pct": 3.56,
+   "volume": "3.96M",
+   "relvol": 0.05
+  },
+  {
+   "ticker": "IREN",
+   "price": 24.32,
+   "pct": -2.35,
+   "volume": "3.78M",
+   "relvol": 0.083
+  },
+  {
+   "ticker": "SPCX",
+   "price": 148.09,
+   "pct": 0.41,
+   "volume": "2.72M",
+   "relvol": 0.027
+  },
+  {
+   "ticker": "INTC",
+   "price": 88.34,
+   "pct": 1.59,
+   "volume": "2.30M",
+   "relvol": 0.022
+  }
+ ],
+ "active_dollars": [
+  {
+   "ticker": "META",
+   "dollar_volume": "$1.37B"
+  },
+  {
+   "ticker": "MU",
+   "dollar_volume": "$657M"
+  },
+  {
+   "ticker": "TSLA",
+   "dollar_volume": "$413M"
+  },
+  {
+   "ticker": "SPCX",
+   "dollar_volume": "$402M"
+  },
+  {
+   "ticker": "NVDA",
+   "dollar_volume": "$395M"
+  }
+ ],
+ "active_dollars_note": "Pre-market price × pre-market volume (StockAnalysis, ~7:50 a.m. CT) over ~130 checked names (Yahoo's top ≥$2B movers plus mega-caps and the most active names); not an exhaustive scan.",
+ "penny_gainers": [
+  {
+   "ticker": "SRTM",
+   "company": "Stratum Holdings",
+   "price": 0.614,
+   "pct": 42.69,
+   "volume": "41.49M",
+   "mcap": "$245K",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news; ~570K shares outstanding, traded ~73x — pump-and-dump pattern"
+  },
+  {
+   "ticker": "TGL",
+   "company": "Treasure Global",
+   "price": 0.316,
+   "pct": 42.66,
+   "volume": "120.46M",
+   "mcap": "$433K",
+   "float": "n/a",
+   "flag": true,
+   "note": "Subsidiary software agreement PR (Oct 21); ~2M shares outstanding, traded ~62x — pump-and-dump pattern"
+  },
+  {
+   "ticker": "SPRC",
+   "company": "SciSparc",
+   "price": 1.52,
+   "pct": 39.45,
+   "volume": "12.31M",
+   "mcap": "$633K",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news; fell 9% Friday"
+  },
+  {
+   "ticker": "RENT",
+   "company": "Rent the Runway",
+   "price": 2.96,
+   "pct": 28.7,
+   "volume": "13.09M",
+   "mcap": "$78M",
+   "float": "n/a",
+   "flag": true,
+   "note": "Insider/backer share purchases at $3.55 under a rights-offering backstop (offering/dilution)"
+  },
+  {
+   "ticker": "CLRO",
+   "company": "ClearOne",
+   "price": 3.93,
+   "pct": 20.92,
+   "volume": "12.19M",
+   "mcap": "$8.7M",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news"
+  },
+  {
+   "ticker": "YMAT",
+   "company": "J-Star Holding",
+   "price": 2.4,
+   "pct": 17.07,
+   "volume": "4.16M",
+   "mcap": "$8.2M",
+   "float": "n/a",
+   "flag": true,
+   "note": "H1 loss reported; no clear catalyst; +38% Friday as well"
+  },
+  {
+   "ticker": "NXTS",
+   "company": "Nexentis Technologies",
+   "price": 0.59,
+   "pct": 12.5,
+   "volume": "204K",
+   "mcap": "$762K",
+   "float": "n/a",
+   "flag": true,
+   "note": "No identifiable news"
+  }
+ ],
+ "penny_losers": [
+  {
+   "ticker": "XXII",
+   "company": "22nd Century Group",
+   "price": 0.119,
+   "pct": -39.81,
+   "volume": "9.12M",
+   "mcap": "$141K",
+   "float": "n/a",
+   "flag": true,
+   "note": "Prelim Q3 PR; fell 33% Friday; sub-$0.15, ~$141K market cap"
+  },
+  {
+   "ticker": "INTR",
+   "company": "Inter & Co",
+   "price": 4.455,
+   "pct": -38.04,
+   "volume": "4.31M",
+   "mcap": "$3.2B",
+   "float": "n/a",
+   "flag": false,
+   "note": "Brazil election sell-off"
+  },
+  {
+   "ticker": "BAK",
+   "company": "Braskem (ADR)",
+   "price": 1.08,
+   "pct": -36.47,
+   "volume": "457K",
+   "mcap": "$677M",
+   "float": "n/a",
+   "flag": false,
+   "note": "Brazil election sell-off"
+  },
+  {
+   "ticker": "BBD",
+   "company": "Banco Bradesco (ADR)",
+   "price": 2.88,
+   "pct": -29.24,
+   "volume": "5.40M",
+   "mcap": "$45.5B",
+   "float": "n/a",
+   "flag": false,
+   "note": "Brazil election sell-off"
+  },
+  {
+   "ticker": "SBS",
+   "company": "Sabesp (ADR)",
+   "price": 4.61,
+   "pct": -27.97,
+   "volume": "579K",
+   "mcap": "$22.5B",
+   "float": "n/a",
+   "flag": false,
+   "note": "Brazil election sell-off"
+  },
+  {
+   "ticker": "CIG",
+   "company": "Cemig (ADR)",
+   "price": 1.865,
+   "pct": -18.91,
+   "volume": "531K",
+   "mcap": "$6.6B",
+   "float": "n/a",
+   "flag": false,
+   "note": "Brazil election sell-off"
+  },
+  {
+   "ticker": "SID",
+   "company": "CSN (ADR)",
+   "price": 0.98,
+   "pct": -16.95,
+   "volume": "1.07M",
+   "mcap": "$1.6B",
+   "float": "n/a",
+   "flag": false,
+   "note": "Brazil election sell-off"
+  },
+  {
+   "ticker": "ABEV",
+   "company": "Ambev (ADR)",
+   "price": 2.77,
+   "pct": -16.06,
+   "volume": "545K",
+   "mcap": "$50.9B",
+   "float": "n/a",
+   "flag": false,
+   "note": "Brazil election sell-off"
+  },
+  {
+   "ticker": "BSBR",
+   "company": "Banco Santander Brasil (ADR)",
+   "price": 4.9,
+   "pct": -11.71,
+   "volume": "370K",
+   "mcap": "$20.8B",
+   "float": "n/a",
+   "flag": false,
+   "note": "Brazil election sell-off"
+  },
+  {
+   "ticker": "BORR",
+   "company": "Borr Drilling",
+   "price": 3.99,
+   "pct": -9.32,
+   "volume": "1.46M",
+   "mcap": "$1.4B",
+   "float": "n/a",
+   "flag": false,
+   "note": "A rig sank offshore Gabon; five people unaccounted for"
+  }
+ ],
+ "leveraged": [
+  {
+   "ticker": "TQQQ",
+   "underlying": "Nasdaq-100",
+   "leverage": "3x bull",
+   "price": 67.47,
+   "pct": 1.78,
+   "volume": "4.11M",
+   "vol_vs_avg": "8% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 0.51
+  },
+  {
+   "ticker": "SQQQ",
+   "underlying": "Nasdaq-100",
+   "leverage": "3x bear",
+   "price": 38.99,
+   "pct": -1.74,
+   "volume": "5.67M",
+   "vol_vs_avg": "12% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 0.51
+  },
+  {
+   "ticker": "TSLL",
+   "underlying": "TSLA",
+   "leverage": "2x bull",
+   "price": 10.23,
+   "pct": 4.82,
+   "volume": "3.08M",
+   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 2.46
+  },
+  {
+   "ticker": "TSLQ",
+   "underlying": "TSLA",
+   "leverage": "2x bear",
+   "price": 16.42,
+   "pct": -4.87,
+   "volume": "515K",
+   "vol_vs_avg": "10% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 2.46
+  },
+  {
+   "ticker": "SOXL",
+   "underlying": "Semiconductors (ICE)",
+   "leverage": "3x bull",
+   "price": 87.44,
+   "pct": 4.64,
+   "volume": "11.59M",
+   "vol_vs_avg": "16% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 1.61
+  },
+  {
+   "ticker": "SOXS",
+   "underlying": "Semiconductors (ICE)",
+   "leverage": "3x bear",
+   "price": 50.05,
+   "pct": -4.59,
+   "volume": "8.58M",
+   "vol_vs_avg": "13% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 1.61
+  },
+  {
+   "ticker": "NVDL",
+   "underlying": "NVDA",
+   "leverage": "2x bull",
+   "price": 31.54,
+   "pct": 2.04,
+   "volume": "230K",
+   "vol_vs_avg": "2% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 1.08
+  },
+  {
+   "ticker": "UPRO",
+   "underlying": "S&P 500",
+   "leverage": "3x bull",
+   "price": 145.41,
+   "pct": 0.95,
+   "volume": "130K",
+   "vol_vs_avg": "7% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 0.27
+  },
+  {
+   "ticker": "SPXU",
+   "underlying": "S&P 500",
+   "leverage": "3x bear",
+   "price": 35.13,
+   "pct": -0.79,
+   "volume": "408K",
+   "vol_vs_avg": "5% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 0.27
+  },
+  {
+   "ticker": "SPXL",
+   "underlying": "S&P 500",
+   "leverage": "3x bull",
+   "price": 278.1,
+   "pct": 0.9,
+   "volume": "62K",
+   "vol_vs_avg": "4% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 0.27
+  },
+  {
+   "ticker": "TNA",
+   "underlying": "Russell 2000",
+   "leverage": "3x bull",
+   "price": 55.755,
+   "pct": 0.13,
+   "volume": "146K",
+   "vol_vs_avg": "3% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 0.13
+  },
+  {
+   "ticker": "TZA",
+   "underlying": "Russell 2000",
+   "leverage": "3x bear",
+   "price": 48.65,
+   "pct": -0.08,
+   "volume": "108K",
+   "vol_vs_avg": "3% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 0.13
+  },
+  {
+   "ticker": "LABU",
+   "underlying": "S&P Biotech (XBI)",
+   "leverage": "3x bull",
+   "price": 220.5,
+   "pct": 0.41,
+   "volume": "2K",
+   "vol_vs_avg": "0.4% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": 0.37
+  },
+  {
+   "ticker": "FNGU",
+   "underlying": "NYSE FANG+",
+   "leverage": "3x bull",
+   "price": 29.36,
+   "pct": 0.82,
+   "volume": "33K",
+   "vol_vs_avg": "1% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": null
+  },
+  {
+   "ticker": "CONL",
+   "underlying": "COIN",
+   "leverage": "2x bull",
+   "price": 4.17,
+   "pct": -3.47,
+   "volume": "596K",
+   "vol_vs_avg": "3% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -1.76
+  },
+  {
+   "ticker": "MSTX",
+   "underlying": "MSTR",
+   "leverage": "2x bull",
+   "price": 15.22,
+   "pct": -3.37,
+   "volume": "388K",
+   "vol_vs_avg": "5% of 3-mo avg daily vol (pre-mkt only)",
+   "underlying_pct": -1.68
+  }
+ ],
+ "leveraged_drivers": [
+  {
+   "group": "TQQQ / SQQQ",
+   "text": "Nasdaq-100 futures +0.5% on chips and lower oil, ahead of Microsoft/Alphabet (Wed) and Amazon (Thu) earnings."
+  },
+  {
+   "group": "TSLL / TSLQ",
+   "text": "TSLA +2.5% pre-market; ZeroHedge cites a Barclays upgrade, and weekend headlines on a possible SpaceX tie-up."
+  },
+  {
+   "group": "SOXL / SOXS",
+   "text": "SOXX +1.6% (MU +2.7%, SK hynix +3.4% on special-dividend plans tied to its Kioxia stake); SOXL/SOXS again the heaviest-traded (~11.6M and ~8.6M shares)."
+  },
+  {
+   "group": "NVDL",
+   "text": "NVDA +1.1%; Nvidia is among companies indicating interest in buying part of Meta's equity raise."
+  },
+  {
+   "group": "UPRO / SPXU / SPXL",
+   "text": "S&P 500 futures +0.3% after Friday's −0.5% close; oil down 2% on Iran talks."
+  },
+  {
+   "group": "TNA / TZA",
+   "text": "Russell 2000 futures +0.1%; IWM flat pre-market."
+  },
+  {
+   "group": "LABU",
+   "text": "XBI +0.4% pre-market; very thin LABU trade (~1.8K shares)."
+  },
+  {
+   "group": "FNGU",
+   "text": "FANG+ has no pre-market quote; members mixed (TSLA +2.5%, NVDA +1.1%, AAPL −1.3%, META −0.7%)."
+  },
+  {
+   "group": "CONL / MSTX",
+   "text": "Bitcoin ~$80.3K, flat over 24h; COIN −1.8% (Bernstein PT cut per ZeroHedge), MSTR −1.7%."
+  }
+ ],
+ "leveraged_note": "ETF pre-market prices and volumes from StockAnalysis ~7:50 a.m. CT, cross-checked with Yahoo. Volume shown against Yahoo's 3-month average daily volume (30-day average not retrieved). Underlying proxies: NQ, ES and RTY futures (Yahoo), TSLA, NVDA, COIN, MSTR, SOXX and XBI pre-market (StockAnalysis). FANG+ has no pre-market quote.",
+ "unusual": [
+  {
+   "ticker": "SRTM",
+   "relvol": 80.82,
+   "pct": 42.69,
+   "reason": "41.5M pre-market shares vs ~0.51M 3-mo avg; no news, ~570K shares outstanding"
+  },
+  {
+   "ticker": "RENT",
+   "relvol": 61.5,
+   "pct": 28.7,
+   "reason": "13.1M pre-market shares vs ~0.21M 3-mo avg; backstop share purchases tied to rights offering"
+  },
+  {
+   "ticker": "TGL",
+   "relvol": 24.73,
+   "pct": 42.66,
+   "reason": "120.5M pre-market shares vs ~4.9M 3-mo avg; subsidiary agreement PR"
+  },
+  {
+   "ticker": "SPRC",
+   "relvol": 16.23,
+   "pct": 39.45,
+   "reason": "12.3M pre-market shares vs ~0.76M 3-mo avg; no news"
+  },
+  {
+   "ticker": "CLRO",
+   "relvol": 4.94,
+   "pct": 20.92,
+   "reason": "12.2M pre-market shares vs ~2.5M 3-mo avg; no news"
+  }
+ ],
+ "unusual_options": "n/a (no options-flow source available). Among ≥$2B names none is near 3× its 3-month average day pre-market; highest are STNE (0.69×), INTR (0.63×) and XP (0.61×). EWZ has traded 28.9M shares pre-market (0.87× its 3-month average day).",
+ "earnings": {
+  "before_open": [
+   {
+    "ticker": "VZ",
+    "company": "Verizon",
+    "estimate": "n/a",
+    "reaction": "−0.6% pre-market",
+    "note": "Postpaid phone net adds 406K vs ~209K est.; FY adj. EPS guide raised to $5.04–5.06; revenue $34.3B vs $34.74B est.; >$2B AWS AI-infrastructure deal"
+   }
+  ],
+  "after_close": [
+   {
+    "ticker": "CDNS",
+    "company": "Cadence Design Systems",
+    "estimate": "n/a",
+    "reaction": "+0.4% pre-market (thin)",
+    "note": ""
+   },
+   {
+    "ticker": "AMKR",
+    "company": "Amkor Technology",
+    "estimate": "n/a",
+    "reaction": "+0.7% pre-market",
+    "note": ""
+   },
+   {
+    "ticker": "RMBS",
+    "company": "Rambus",
+    "estimate": "n/a",
+    "reaction": "+1.0% pre-market (thin)",
+    "note": ""
+   },
+   {
+    "ticker": "WELL",
+    "company": "Welltower",
+    "estimate": "n/a",
+    "reaction": "+0.7% pre-market (thin)",
+    "note": ""
+   },
+   {
+    "ticker": "WHR",
+    "company": "Whirlpool",
+    "estimate": "n/a",
+    "reaction": "+0.3% pre-market (thin)",
+    "note": ""
+   },
+   {
+    "ticker": "BRO",
+    "company": "Brown & Brown",
+    "estimate": "n/a",
+    "reaction": "flat (thin)",
+    "note": ""
+   },
+   {
+    "ticker": "ARE",
+    "company": "Alexandria Real Estate",
+    "estimate": "n/a",
+    "reaction": "n/a",
+    "note": ""
+   },
+   {
+    "ticker": "NUE",
+    "company": "Nucor",
+    "estimate": "n/a",
+    "reaction": "+2.2% pre-market (thin)",
+    "note": "Listed by Yahoo as reporting today; timing not confirmed"
+   },
+   {
+    "ticker": "PSA",
+    "company": "Public Storage",
+    "estimate": "n/a",
+    "reaction": "+0.3% (thin)",
+    "note": "Listed by Yahoo as reporting today; timing not confirmed"
+   }
+  ]
+ },
+ "watchlist": {
+  "criteria": [
+   "Price ≥ $5 and market cap ≥ $2B",
+   "Pre-market gap ≥ +3% (gap up) or ≤ −3% (gap down) vs prior close",
+   "Confirmed news catalyst: earnings/guidance, M&A, analyst action, FDA/trial data, or major contract",
+   "Pre-market volume ≥ 100K shares; relative volume ≥ 3× preferred where available",
+   "Excluded: dilution/offering filings, reverse split in last 90 days, OTC listings, no identifiable news",
+   "Up to 10 names, ranked by absolute gap size"
+  ],
+  "items": [
+   {
+    "ticker": "SGRY",
+    "company": "Surgery Partners",
+    "direction": "up",
+    "prior_close": 15.75,
+    "premarket_price": 19.5,
+    "gap_pct": 23.81,
+    "relvol": 0.051,
+    "catalyst": "FT: Bon Secours Mercy Health in late-stage talks to take it private at ~$20/share (~$6B incl. debt)",
+    "risk": "Media report; no company-confirmed agreement; thin pre-market trade"
+   },
+   {
+    "ticker": "RRC",
+    "company": "Range Resources",
+    "direction": "up",
+    "prior_close": 45.52,
+    "premarket_price": 50.77,
+    "gap_pct": 11.53,
+    "relvol": 0.108,
+    "catalyst": "EQT to acquire in all-stock deal (0.987 EQT shares per RRC share; >$50B combined EV)",
+    "risk": "All-stock: RRC value tracks EQT, which is down ~6%"
+   },
+   {
+    "ticker": "MRNA",
+    "company": "Moderna",
+    "direction": "down",
+    "prior_close": 200.1,
+    "premarket_price": 186.2,
+    "gap_pct": -6.95,
+    "relvol": 0.046,
+    "catalyst": "Phase 3 intismeran (with Merck) melanoma data: 42% risk reduction vs 49% in Phase 2b",
+    "risk": "Sources differ on which trial (ZeroHedge cites pancreatic cancer)"
+   },
+   {
+    "ticker": "EQT",
+    "company": "EQT Corp.",
+    "direction": "down",
+    "prior_close": 55.63,
+    "premarket_price": 52.07,
+    "gap_pct": -6.4,
+    "relvol": 0.057,
+    "catalyst": "Agreed to acquire Range Resources in an all-stock deal",
+    "risk": "Acquirer; issuing shares for the deal"
+   }
+  ],
+  "excluded": "Catalyst not a listed type (Brazil election): XP (−51%), STNE (−39%), PAGS (−34%), ITUB (−28%), NU (−26%), PBR/PBR.A (−22%), UGP (−20%), VIV (−17%), MELI (−15%), VALE (−4.4%), SAN (−3.7%, Brazil exposure), LTM (−5.7%). Under $2B market cap: XNCR (+34%, ESMO kidney-cancer data, $1.87B), PICS (−38%, $1.8B). Under 100K pre-market shares: FICO (−9.6%, 7K; Wells Fargo downgrade), TIMB (−18%, 47K), ELPC (−20%, 9K), EFX (−3.4%, 3K; RBC downgrade), AUGO (−7.8%, 17K; no news), TSEM (+3.5%, 58K), SMTC (+3.7%, 33K), CLS, RDY. Other catalyst types: CRWV (−3.4%, 4.8M; Musk comments on neocloud funding), SKHY (+3.4%, 1.1M; special-dividend plans). No company-specific news: HSAI (+4.4%, 134K), COHR (+3.7%, 196K), LITE (+3.5%, 165K), NOK (+3.6%, 3.96M). No dilution, reverse-split or OTC cases among ≥$2B names.",
+  "empty_reason": "",
+  "price_label": "Pre-market",
+  "move_label": "Gap",
+  "subtitle": "Built pre-market (~8:00 a.m. CT) from live pre-market quotes vs Friday's close."
+ },
+ "sources": [
+  "Yahoo Finance screener and v7 quotes via the Mac browser (~7:40–7:55 a.m. CT)",
+  "StockAnalysis.com pre-market quote API and pre-market gainers/losers pages (dated Oct 26, ~7:50 a.m. CT)",
+  "Investing.com 'Premarket movers: Moderna, Brazil ADRs drop; SpaceX rises' (Oct 26, ~7:26 a.m.)",
+  "Benzinga pre-market movers articles (5:13 a.m., 8:02 a.m., 8:05 a.m. ET) and 'Why Is Rent the Runway Stock Surging Monday?' (8:46 a.m. ET)",
+  "ZeroHedge 'Futures Rise As Meta Jumps On $95BN Equity Raise, Oil Slides; Brazil Crashes After Lula Shock' (as of 8:15 a.m. ET)",
+  "TheStreet 'Stock Market Today (Oct. 26, 2026)' (8:22 a.m. ET); Yahoo Finance live blog (Oct 26)",
+  "Search headlines: CNBC (Brazil/Lula; neoclouds), GuruFocus/Seeking Alpha/US News (EQT–Range deal)"
+ ]
+}
